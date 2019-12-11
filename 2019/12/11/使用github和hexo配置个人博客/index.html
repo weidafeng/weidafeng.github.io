@@ -18,7 +18,7 @@
 <meta property="og:image" content="https:&#x2F;&#x2F;weidafeng.github.io&#x2F;2019&#x2F;12&#x2F;11&#x2F;%E4%BD%BF%E7%94%A8github%E5%92%8Chexo%E9%85%8D%E7%BD%AE%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2&#x2F;media&#x2F;403c864af467f9402f6effcf8a79c989.png">
 <meta property="og:image" content="https:&#x2F;&#x2F;weidafeng.github.io&#x2F;2019&#x2F;12&#x2F;11&#x2F;%E4%BD%BF%E7%94%A8github%E5%92%8Chexo%E9%85%8D%E7%BD%AE%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2&#x2F;media&#x2F;a97adecbd96779fc5d15559f9891ac80.png">
 <meta property="article:published_time" content="2019-12-11T13:56:13.535Z">
-<meta property="article:modified_time" content="2019-12-11T14:07:59.405Z">
+<meta property="article:modified_time" content="2019-12-11T14:56:39.820Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https:&#x2F;&#x2F;weidafeng.github.io&#x2F;2019&#x2F;12&#x2F;11&#x2F;%E4%BD%BF%E7%94%A8github%E5%92%8Chexo%E9%85%8D%E7%BD%AE%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2&#x2F;media&#x2F;41c9f1fe8f1e95386debcb7d3a9ee5d7.png">
@@ -116,12 +116,29 @@
 <p>此时看到的是source\_posts文件夹下的hello-world.md</p>
 <h2 id="安装-hexo-deployer-git"><a href="#安装-hexo-deployer-git" class="headerlink" title="安装 hexo-deployer-git"></a>安装 hexo-deployer-git</h2><p><code>npm install hexo-deployer-git --save</code></p>
 <p><img src="media/a97adecbd96779fc5d15559f9891ac80.png" alt=""></p>
-<h2 id="Hexo-主题"><a href="#Hexo-主题" class="headerlink" title="Hexo 主题"></a>Hexo 主题</h2><p>您<br>可以在 <a href="https://hexo.io/themes/index.html" target="_blank" rel="noopener">hexo.io/themes/inde…</a> 进行主题的挑选更换。<br>下载好后放在themes文件夹内，同时在 _config.yml 中进行配置变更就好了。</p>
+<h2 id="Hexo-主题"><a href="#Hexo-主题" class="headerlink" title="Hexo 主题"></a>Hexo 主题</h2><p>您可以在 <a href="https://hexo.io/themes/index.html" target="_blank" rel="noopener">hexo.io/themes/inde…</a> 进行主题的挑选更换。<br>下载好后放在themes文件夹内，同时在 _config.yml 中进行配置变更就好了。</p>
+<h2 id="上传到github"><a href="#上传到github" class="headerlink" title="上传到github"></a>上传到github</h2><h3 id="需要修改的地方（URL）"><a href="#需要修改的地方（URL）" class="headerlink" title="需要修改的地方（URL）"></a>需要修改的地方（URL）</h3><p><code># URL</code></p>
+<p><code>## If your site is put in a subdirectory, set url as
+&#39;http://yoursite.com/child&#39; and root as &#39;/child/&#39;</code></p>
+<p><code>url: https://weidafeng.github.io/</code></p>
+<p><code>root: /weidafeng.github.io/</code></p>
+<p><code>permalink: :year/:month/:day/:title/</code></p>
+<p><code>permalink_defaults:</code></p>
+<p><code>pretty_urls:</code></p>
+<h3 id="需要修改的地方（Deployment）"><a href="#需要修改的地方（Deployment）" class="headerlink" title="需要修改的地方（Deployment）"></a>需要修改的地方（<code>Deployment</code>）</h3><p><code># Deployment</code></p>
+<p><code>## Docs: https://hexo.io/docs/deployment.html</code></p>
+<p><code>deploy:</code></p>
+<p><code>type: git</code></p>
+<p><code>repo: git@github.com:weidafeng/weidafeng.github.io.git</code></p>
+<p><code>branch: master</code></p>
+<p><code>message: &#39;bulid the first blog with hexo&#39;</code></p>
+<h3 id="命令："><a href="#命令：" class="headerlink" title="命令："></a>命令：</h3><p><code>hexo clean</code></p>
+<p><code>hexo d -g</code></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weidafeng.github.io/2019/12/11/%E4%BD%BF%E7%94%A8github%E5%92%8Chexo%E9%85%8D%E7%BD%AE%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" data-id="ck41ew1on000194a08zmdbqlt" class="article-share-link">Share</a>
+      <a data-url="https://weidafeng.github.io/2019/12/11/%E4%BD%BF%E7%94%A8github%E5%92%8Chexo%E9%85%8D%E7%BD%AE%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" data-id="ck41f32y90001usa00zy4cy7q" class="article-share-link">Share</a>
       
       
     </footer>
