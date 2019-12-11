@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>使用github和hexo配置个人博客 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="使用github配置个人博客安装node.jsHexo基于Node.js，所以您还需要安装Node.js。Node.js的官网下载地址： nodejs.cn&#x2F;download&#x2F; 使用 npm 安装 Hexo(演示是在windows-64环境下)：npm install -g hexo-cli  使用 Hexo指定一个空目录初始化hexo所需文件： 命令： 1hexo init 目录名(要求是空目录">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用github和hexo配置个人博客">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;11&#x2F;%E4%BD%BF%E7%94%A8github%E5%92%8Chexo%E9%85%8D%E7%BD%AE%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2&#x2F;index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="使用github配置个人博客安装node.jsHexo基于Node.js，所以您还需要安装Node.js。Node.js的官网下载地址： nodejs.cn&#x2F;download&#x2F; 使用 npm 安装 Hexo(演示是在windows-64环境下)：npm install -g hexo-cli  使用 Hexo指定一个空目录初始化hexo所需文件： 命令： 1hexo init 目录名(要求是空目录">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;11&#x2F;%E4%BD%BF%E7%94%A8github%E5%92%8Chexo%E9%85%8D%E7%BD%AE%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2&#x2F;media&#x2F;41c9f1fe8f1e95386debcb7d3a9ee5d7.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;11&#x2F;%E4%BD%BF%E7%94%A8github%E5%92%8Chexo%E9%85%8D%E7%BD%AE%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2&#x2F;media&#x2F;c69bbf55ae4eeb8514e4d459441835d0.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;11&#x2F;%E4%BD%BF%E7%94%A8github%E5%92%8Chexo%E9%85%8D%E7%BD%AE%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2&#x2F;media&#x2F;403c864af467f9402f6effcf8a79c989.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;11&#x2F;%E4%BD%BF%E7%94%A8github%E5%92%8Chexo%E9%85%8D%E7%BD%AE%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2&#x2F;media&#x2F;a97adecbd96779fc5d15559f9891ac80.png">
+<meta property="article:published_time" content="2019-12-11T13:56:13.535Z">
+<meta property="article:modified_time" content="2019-12-11T14:07:59.405Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;11&#x2F;%E4%BD%BF%E7%94%A8github%E5%92%8Chexo%E9%85%8D%E7%BD%AE%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2&#x2F;media&#x2F;41c9f1fe8f1e95386debcb7d3a9ee5d7.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 4.1.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-使用github和hexo配置个人博客" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/12/11/%E4%BD%BF%E7%94%A8github%E5%92%8Chexo%E9%85%8D%E7%BD%AE%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="article-date">
+  <time datetime="2019-12-11T13:56:13.535Z" itemprop="datePublished">2019-12-11</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      使用github和hexo配置个人博客
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="使用github配置个人博客"><a href="#使用github配置个人博客" class="headerlink" title="使用github配置个人博客"></a>使用github配置个人博客</h1><h2 id="安装node-js"><a href="#安装node-js" class="headerlink" title="安装node.js"></a>安装node.js</h2><p>Hexo基于Node.js，所以您还需要安装Node.js。Node.js的官网下载地址： <a href="http://nodejs.cn/download/%EF%BC%8C%E9%80%89%E6%8B%A9%E9%80%82%E5%90%88%E6%82%A8%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%AE%89%E8%A3%85%E7%A8%8B%E5%BA%8F%E5%8C%85%E3%80%82" target="_blank" rel="noopener">nodejs.cn/download/</a></p>
+<h2 id="使用-npm-安装-Hexo-演示是在windows-64环境下-："><a href="#使用-npm-安装-Hexo-演示是在windows-64环境下-：" class="headerlink" title="使用 npm 安装 Hexo(演示是在windows-64环境下)："></a>使用 npm 安装 Hexo(演示是在windows-64环境下)：</h2><p>npm install -g hexo-cli</p>
+<p><img src="media/41c9f1fe8f1e95386debcb7d3a9ee5d7.png" alt=""></p>
+<h2 id="使用-Hexo"><a href="#使用-Hexo" class="headerlink" title="使用 Hexo"></a>使用 Hexo</h2><p>指定一个空目录初始化hexo所需文件：</p>
+<p>命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init 目录名(要求是空目录)</span><br></pre></td></tr></table></figure>
+
+<p><img src="media/c69bbf55ae4eeb8514e4d459441835d0.png" alt=""></p>
+<p>新建完成后，生成如下目录文件：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.gitignore</span><br><span class="line">node_modules</span><br><span class="line">package-lock.json</span><br><span class="line">package.json</span><br><span class="line">scaffolds</span><br><span class="line">source</span><br><span class="line">themes</span><br><span class="line">_config.yml</span><br></pre></td></tr></table></figure>
+
+<h2 id="hexo-项目的文件说明"><a href="#hexo-项目的文件说明" class="headerlink" title="hexo 项目的文件说明"></a>hexo 项目的文件说明</h2><h3 id="config-yml-是配置信息"><a href="#config-yml-是配置信息" class="headerlink" title="_config.yml 是配置信息"></a>_config.yml 是配置信息</h3><p>网站的 配置 信息，您可以在此配置大部分的参数。 应用程序的信息。<br>更多关于该文件的说明可以参考：<a href="https://hexo.io/zh-cn/docs/configuration%E3%80%82" target="_blank" rel="noopener">hexo.io/zh-cn/docs/…</a></p>
+<h3 id="scaffolds-模板文件"><a href="#scaffolds-模板文件" class="headerlink" title="scaffolds 模板文件"></a>scaffolds 模板文件</h3><p><a href="https://hexo.io/zh-cn/docs/writing" target="_blank" rel="noopener">模板</a>文件夹，当您新建文章时，hexo会根据模板来创建新的文件。</p>
+<p>Hexo的模板是指在新建的markdown文件中默认填充的内容。例如，如果您修改scaffold/post.md中的Front-matter内容，那么每次新建一篇文章时都会包含这个修改。</p>
+<h3 id="source"><a href="#source" class="headerlink" title="source"></a>source</h3><p>资源文件夹是存放用户资源的地方。除 _posts 文件夹之外，开头命名为(下划线)的文件<br>/ 文件夹和隐藏的文件将会被忽略。 Markdown 和 HTML文件会被解析并放到 public<br>文件夹，而其他文件会被拷贝过去。</p>
+<h3 id="themes"><a href="#themes" class="headerlink" title="themes"></a>themes</h3><p><a href="https://hexo.io/zh-cn/docs/themes" target="_blank" rel="noopener">主题</a>文件夹。Hexo 会根据主题来生成静态页面。</p>
+<h2 id="浏览博客雏形"><a href="#浏览博客雏形" class="headerlink" title="浏览博客雏形"></a>浏览博客雏形</h2><p>进入hexo项目目录中，使用如下命令开启博客服务：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<p><img src="media/403c864af467f9402f6effcf8a79c989.png" alt=""></p>
+<p>浏览器中访问：<a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000</a>。</p>
+<p>此时看到的是source\_posts文件夹下的hello-world.md</p>
+<h2 id="安装-hexo-deployer-git"><a href="#安装-hexo-deployer-git" class="headerlink" title="安装 hexo-deployer-git"></a>安装 hexo-deployer-git</h2><p><code>npm install hexo-deployer-git --save</code></p>
+<p><img src="media/a97adecbd96779fc5d15559f9891ac80.png" alt=""></p>
+<h2 id="Hexo-主题"><a href="#Hexo-主题" class="headerlink" title="Hexo 主题"></a>Hexo 主题</h2><p>您<br>可以在 <a href="https://hexo.io/themes/index.html" target="_blank" rel="noopener">hexo.io/themes/inde…</a> 进行主题的挑选更换。<br>下载好后放在themes文件夹内，同时在 _config.yml 中进行配置变更就好了。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/12/11/%E4%BD%BF%E7%94%A8github%E5%92%8Chexo%E9%85%8D%E7%BD%AE%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" data-id="ck41cx17p00025ka0gqff63wq" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2019/12/11/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/12/11/%E4%BD%BF%E7%94%A8github%E5%92%8Chexo%E9%85%8D%E7%BD%AE%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">使用github和hexo配置个人博客</a>
+          </li>
+        
+          <li>
+            <a href="/2019/12/11/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
