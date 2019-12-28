@@ -4,19 +4,25 @@
   
     
     <entry>
-      <title>使用github和hexo配置个人博客</title>
-      <link href="/2019/12/19/shi-yong-github-he-hexo-pei-zhi-ge-ren-bo-ke/"/>
-      <url>/2019/12/19/shi-yong-github-he-hexo-pei-zhi-ge-ren-bo-ke/</url>
+      <title>《Python数据可视化之matplotlib实践》配套代码</title>
+      <link href="/2019/12/28/python-matplotlib-practices/"/>
+      <url>/2019/12/28/python-matplotlib-practices/</url>
       
-        <content type="html"><![CDATA[<h1 id="使用github配置个人博客"><a href="#使用github配置个人博客" class="headerlink" title="使用github配置个人博客"></a>使用github配置个人博客</h1><h2 id="安装node-js"><a href="#安装node-js" class="headerlink" title="安装node.js"></a>安装node.js</h2><p>Hexo基于Node.js，所以您还需要安装Node.js。Node.js的官网下载地址： <a href="http://nodejs.cn/download/%EF%BC%8C%E9%80%89%E6%8B%A9%E9%80%82%E5%90%88%E6%82%A8%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%AE%89%E8%A3%85%E7%A8%8B%E5%BA%8F%E5%8C%85%E3%80%82" target="_blank" rel="noopener">nodejs.cn/download/</a></p><h2 id="使用-npm-安装-Hexo-演示是在windows-64环境下-："><a href="#使用-npm-安装-Hexo-演示是在windows-64环境下-：" class="headerlink" title="使用 npm 安装 Hexo(演示是在windows-64环境下)："></a>使用 npm 安装 Hexo(演示是在windows-64环境下)：</h2><p>npm install -g hexo-cli</p><p><img src="/media/41c9f1fe8f1e95386debcb7d3a9ee5d7.png" alt=""></p><h2 id="使用-Hexo"><a href="#使用-Hexo" class="headerlink" title="使用 Hexo"></a>使用 Hexo</h2><p>指定一个空目录初始化hexo所需文件：</p><p>命令：</p><pre><code>hexo init 目录名(要求是空目录)</code></pre><p><img src="/media/c69bbf55ae4eeb8514e4d459441835d0.png" alt=""></p><p>新建完成后，生成如下目录文件：</p><pre><code>.gitignorenode_modulespackage-lock.jsonpackage.jsonscaffoldssourcethemes_config.yml</code></pre><h2 id="hexo-项目的文件说明"><a href="#hexo-项目的文件说明" class="headerlink" title="hexo 项目的文件说明"></a>hexo 项目的文件说明</h2><h3 id="config-yml-是配置信息"><a href="#config-yml-是配置信息" class="headerlink" title="_config.yml 是配置信息"></a>_config.yml 是配置信息</h3><p>网站的 配置 信息，您可以在此配置大部分的参数。 应用程序的信息。<br>更多关于该文件的说明可以参考：<a href="https://hexo.io/zh-cn/docs/configuration%E3%80%82" target="_blank" rel="noopener">hexo.io/zh-cn/docs/…</a></p><h3 id="scaffolds-模板文件"><a href="#scaffolds-模板文件" class="headerlink" title="scaffolds 模板文件"></a>scaffolds 模板文件</h3><p><a href="https://hexo.io/zh-cn/docs/writing" target="_blank" rel="noopener">模板</a>文件夹，当您新建文章时，hexo会根据模板来创建新的文件。</p><p>Hexo的模板是指在新建的markdown文件中默认填充的内容。例如，如果您修改scaffold/post.md中的Front-matter内容，那么每次新建一篇文章时都会包含这个修改。</p><h3 id="source"><a href="#source" class="headerlink" title="source"></a>source</h3><p>资源文件夹是存放用户资源的地方。除 _posts 文件夹之外，开头命名为(下划线)的文件<br>/ 文件夹和隐藏的文件将会被忽略。 Markdown 和 HTML文件会被解析并放到 public<br>文件夹，而其他文件会被拷贝过去。</p><h3 id="themes"><a href="#themes" class="headerlink" title="themes"></a>themes</h3><p><a href="https://hexo.io/zh-cn/docs/themes" target="_blank" rel="noopener">主题</a>文件夹。Hexo 会根据主题来生成静态页面。</p><h2 id="浏览博客雏形"><a href="#浏览博客雏形" class="headerlink" title="浏览博客雏形"></a>浏览博客雏形</h2><p>进入hexo项目目录中，使用如下命令开启博客服务：</p><pre><code>hexo s</code></pre><p><img src="/media/403c864af467f9402f6effcf8a79c989.png" alt=""></p><p>浏览器中访问：<a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000</a>。</p><p>此时看到的是source\_posts文件夹下的hello-world.md</p><h2 id="安装-hexo-deployer-git"><a href="#安装-hexo-deployer-git" class="headerlink" title="安装 hexo-deployer-git"></a>安装 hexo-deployer-git</h2><p><code>npm install hexo-deployer-git --save</code></p><p><img src="/media/a97adecbd96779fc5d15559f9891ac80.png" alt=""></p><h2 id="Hexo-主题"><a href="#Hexo-主题" class="headerlink" title="Hexo 主题"></a>Hexo 主题</h2><p>您可以在 <a href="https://hexo.io/themes/index.html" target="_blank" rel="noopener">hexo.io/themes/inde…</a> 进行主题的挑选更换。<br>下载好后放在themes文件夹内，同时在 _config.yml 中进行配置变更就好了。</p><h2 id="上传到github"><a href="#上传到github" class="headerlink" title="上传到github"></a>上传到github</h2><h3 id="需要修改的地方（URL）"><a href="#需要修改的地方（URL）" class="headerlink" title="需要修改的地方（URL）"></a>需要修改的地方（URL）</h3><pre><code># URL## If your site is put in a subdirectory, set url as&#39;http://yoursite.com/child&#39; and root as &#39;/child/&#39;url: https://weidafeng.github.io/root: /weidafeng.github.io/permalink: :year/:month/:day/:title/permalink_defaults:pretty_urls:</code></pre><h3 id="需要修改的地方（Deployment）"><a href="#需要修改的地方（Deployment）" class="headerlink" title="需要修改的地方（Deployment）"></a>需要修改的地方（<code>Deployment</code>）</h3><pre><code># Deployment## Docs: https://hexo.io/docs/deployment.htmldeploy:type: gitrepo: git\@github.com:weidafeng/weidafeng.github.io.gitbranch: mastermessage: &#39;bulid the first blog with hexo&#39;</code></pre><h3 id="命令："><a href="#命令：" class="headerlink" title="命令："></a>命令：</h3><pre><code>hexo cleanhexo d -g</code></pre>]]></content>
+        <content type="html"><![CDATA[<h1 id="python-matplotlib-practices"><a href="#python-matplotlib-practices" class="headerlink" title="python-matplotlib-practices"></a>python-matplotlib-practices</h1><h1 id="《Python数据可视化之matplotlib实践》配套代码"><a href="#《Python数据可视化之matplotlib实践》配套代码" class="headerlink" title="《Python数据可视化之matplotlib实践》配套代码"></a>《Python数据可视化之matplotlib实践》配套代码</h1><p>这是我阅读《python数据可视化之matplotlib实践》时做的“笔记”，按照书本的顺序从头敲了一遍，提供了jupyter notebook和.py两个版本，方便查阅。</p><h2 id="代码仓库"><a href="#代码仓库" class="headerlink" title="代码仓库"></a>代码仓库</h2><p><a href="https://github.com/weidafeng/python-matplotlib-practices" target="_blank" rel="noopener">https://github.com/weidafeng/python-matplotlib-practices</a></p><h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ol><li>chapter-1： matplotlib图表组成元素</li><li>chapter 2： 使用统计函数绘制简单图形</li><li>chapter 3： 绘制统计图形</li><li>chapter 4： 完善统计图形</li><li>chapter 6： 划分画布</li><li>chapter 7： 共享坐标轴</li><li>chapter 8： 坐标轴高阶应用</li><li>chapter 12： 查看颜色格式</li></ol><p><img src="https://i.loli.net/2019/12/28/QrE5KJbcngvtFLD.png" alt="overview"></p>]]></content>
       
       
       <categories>
           
-          <category> hexo </category>
+          <category> matplotlib </category>
           
       </categories>
       
+      
+        <tags>
+            
+            <tag> matplotlib </tag>
+            
+        </tags>
       
     </entry>
     
@@ -33,6 +39,25 @@
       <categories>
           
           <category> 随笔 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>使用github和hexo配置个人博客</title>
+      <link href="/2019/12/18/shi-yong-github-he-hexo-pei-zhi-ge-ren-bo-ke/"/>
+      <url>/2019/12/18/shi-yong-github-he-hexo-pei-zhi-ge-ren-bo-ke/</url>
+      
+        <content type="html"><![CDATA[<h1 id="使用github配置个人博客"><a href="#使用github配置个人博客" class="headerlink" title="使用github配置个人博客"></a>使用github配置个人博客</h1><h2 id="安装node-js"><a href="#安装node-js" class="headerlink" title="安装node.js"></a>安装node.js</h2><p>Hexo基于Node.js，所以您还需要安装Node.js。Node.js的官网下载地址： <a href="http://nodejs.cn/download/%EF%BC%8C%E9%80%89%E6%8B%A9%E9%80%82%E5%90%88%E6%82%A8%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%AE%89%E8%A3%85%E7%A8%8B%E5%BA%8F%E5%8C%85%E3%80%82" target="_blank" rel="noopener">nodejs.cn/download/</a></p><h2 id="使用-npm-安装-Hexo-演示是在windows-64环境下-："><a href="#使用-npm-安装-Hexo-演示是在windows-64环境下-：" class="headerlink" title="使用 npm 安装 Hexo(演示是在windows-64环境下)："></a>使用 npm 安装 Hexo(演示是在windows-64环境下)：</h2><p>npm install -g hexo-cli</p><p><img src="/media/41c9f1fe8f1e95386debcb7d3a9ee5d7.png" alt=""></p><h2 id="使用-Hexo"><a href="#使用-Hexo" class="headerlink" title="使用 Hexo"></a>使用 Hexo</h2><p>指定一个空目录初始化hexo所需文件：</p><p>命令：</p><pre><code>hexo init 目录名(要求是空目录)</code></pre><p><img src="/media/c69bbf55ae4eeb8514e4d459441835d0.png" alt=""></p><p>新建完成后，生成如下目录文件：</p><pre><code>.gitignorenode_modulespackage-lock.jsonpackage.jsonscaffoldssourcethemes_config.yml</code></pre><h2 id="hexo-项目的文件说明"><a href="#hexo-项目的文件说明" class="headerlink" title="hexo 项目的文件说明"></a>hexo 项目的文件说明</h2><h3 id="config-yml-是配置信息"><a href="#config-yml-是配置信息" class="headerlink" title="_config.yml 是配置信息"></a>_config.yml 是配置信息</h3><p>网站的 配置 信息，您可以在此配置大部分的参数。 应用程序的信息。<br>更多关于该文件的说明可以参考：<a href="https://hexo.io/zh-cn/docs/configuration%E3%80%82" target="_blank" rel="noopener">hexo.io/zh-cn/docs/…</a></p><h3 id="scaffolds-模板文件"><a href="#scaffolds-模板文件" class="headerlink" title="scaffolds 模板文件"></a>scaffolds 模板文件</h3><p><a href="https://hexo.io/zh-cn/docs/writing" target="_blank" rel="noopener">模板</a>文件夹，当您新建文章时，hexo会根据模板来创建新的文件。</p><p>Hexo的模板是指在新建的markdown文件中默认填充的内容。例如，如果您修改scaffold/post.md中的Front-matter内容，那么每次新建一篇文章时都会包含这个修改。</p><h3 id="source"><a href="#source" class="headerlink" title="source"></a>source</h3><p>资源文件夹是存放用户资源的地方。除 _posts 文件夹之外，开头命名为(下划线)的文件<br>/ 文件夹和隐藏的文件将会被忽略。 Markdown 和 HTML文件会被解析并放到 public<br>文件夹，而其他文件会被拷贝过去。</p><h3 id="themes"><a href="#themes" class="headerlink" title="themes"></a>themes</h3><p><a href="https://hexo.io/zh-cn/docs/themes" target="_blank" rel="noopener">主题</a>文件夹。Hexo 会根据主题来生成静态页面。</p><h2 id="浏览博客雏形"><a href="#浏览博客雏形" class="headerlink" title="浏览博客雏形"></a>浏览博客雏形</h2><p>进入hexo项目目录中，使用如下命令开启博客服务：</p><pre><code>hexo s</code></pre><p><img src="/media/403c864af467f9402f6effcf8a79c989.png" alt=""></p><p>浏览器中访问：<a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000</a>。</p><p>此时看到的是source\_posts文件夹下的hello-world.md</p><h2 id="安装-hexo-deployer-git"><a href="#安装-hexo-deployer-git" class="headerlink" title="安装 hexo-deployer-git"></a>安装 hexo-deployer-git</h2><p><code>npm install hexo-deployer-git --save</code></p><p><img src="/media/a97adecbd96779fc5d15559f9891ac80.png" alt=""></p><h2 id="Hexo-主题"><a href="#Hexo-主题" class="headerlink" title="Hexo 主题"></a>Hexo 主题</h2><p>您可以在 <a href="https://hexo.io/themes/index.html" target="_blank" rel="noopener">hexo.io/themes/inde…</a> 进行主题的挑选更换。<br>下载好后放在themes文件夹内，同时在 _config.yml 中进行配置变更就好了。</p><h2 id="上传到github"><a href="#上传到github" class="headerlink" title="上传到github"></a>上传到github</h2><h3 id="需要修改的地方（URL）"><a href="#需要修改的地方（URL）" class="headerlink" title="需要修改的地方（URL）"></a>需要修改的地方（URL）</h3><pre><code># URL## If your site is put in a subdirectory, set url as&#39;http://yoursite.com/child&#39; and root as &#39;/child/&#39;url: https://weidafeng.github.io/root: /weidafeng.github.io/permalink: :year/:month/:day/:title/permalink_defaults:pretty_urls:</code></pre><h3 id="需要修改的地方（Deployment）"><a href="#需要修改的地方（Deployment）" class="headerlink" title="需要修改的地方（Deployment）"></a>需要修改的地方（<code>Deployment</code>）</h3><pre><code># Deployment## Docs: https://hexo.io/docs/deployment.htmldeploy:type: gitrepo: git\@github.com:weidafeng/weidafeng.github.io.gitbranch: mastermessage: &#39;bulid the first blog with hexo&#39;</code></pre><h3 id="命令："><a href="#命令：" class="headerlink" title="命令："></a>命令：</h3><pre><code>hexo cleanhexo d -g</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> hexo </category>
           
       </categories>
       
