@@ -538,25 +538,29 @@ overall_information <span class="token operator">=</span> re<span class="token p
 </li>
 <li><p>安装pymongo库<br> <code>pip install pymongo</code></p>
 </li>
-<li><p>新建数据库  </p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> pymongo <span class="token keyword">import</span> MongoClient
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<li><p>新建数据库    </p>
 </li>
 </ol>
-<h1 id="使用自己的本地数据库，端口默认为27017"><a href="#使用自己的本地数据库，端口默认为27017" class="headerlink" title="使用自己的本地数据库，端口默认为27017"></a>使用自己的本地数据库，端口默认为27017</h1><p>client = MongoClient(‘localhost’, 27017)</p>
-<h1 id="数据库命名为2019-nCov"><a href="#数据库命名为2019-nCov" class="headerlink" title="数据库命名为2019-nCov"></a>数据库命名为2019-nCov</h1><p>db = client[‘2019-nCov’]</p>
-<pre><code>
-- 插入/查找字段
-```python
-class DB:
-    def __init__(self):
-        self.db = db
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> pymongo <span class="token keyword">import</span> MongoClient
 
-    def insert(self, collection, data):
-        self.db[collection].insert(data)  
+<span class="token comment" spellcheck="true"># 使用自己的本地数据库，端口默认为27017</span>
+client <span class="token operator">=</span> MongoClient<span class="token punctuation">(</span><span class="token string">'localhost'</span><span class="token punctuation">,</span> <span class="token number">27017</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true"># 数据库命名为2019-nCov</span>
+db <span class="token operator">=</span> client<span class="token punctuation">[</span><span class="token string">'2019-nCov'</span><span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li><p>插入/查找字段</p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">DB</span><span class="token punctuation">:</span>
+  <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+      self<span class="token punctuation">.</span>db <span class="token operator">=</span> db
 
-    def find_one(self, collection, data=None):
-        return self.db[collection].find_one(data)</code></pre><h2 id="3-导出数据"><a href="#3-导出数据" class="headerlink" title="3. 导出数据"></a>3. 导出数据</h2><p>爬取完毕后，可以在MongoDB数据库里查看数据，命令行方式不太友好：<br><img src="https://i.loli.net/2020/01/30/mZvD7HSu3sALFzb.png" alt="使用命令行访问MongoDB数据.png"></p>
+  <span class="token keyword">def</span> <span class="token function">insert</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> collection<span class="token punctuation">,</span> data<span class="token punctuation">)</span><span class="token punctuation">:</span>
+      self<span class="token punctuation">.</span>db<span class="token punctuation">[</span>collection<span class="token punctuation">]</span><span class="token punctuation">.</span>insert<span class="token punctuation">(</span>data<span class="token punctuation">)</span>  
+
+  <span class="token keyword">def</span> <span class="token function">find_one</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> collection<span class="token punctuation">,</span> data<span class="token operator">=</span>None<span class="token punctuation">)</span><span class="token punctuation">:</span>
+      <span class="token keyword">return</span> self<span class="token punctuation">.</span>db<span class="token punctuation">[</span>collection<span class="token punctuation">]</span><span class="token punctuation">.</span>find_one<span class="token punctuation">(</span>data<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+</ul>
+<h2 id="3-导出数据"><a href="#3-导出数据" class="headerlink" title="3. 导出数据"></a>3. 导出数据</h2><p>爬取完毕后，可以在MongoDB数据库里查看数据，命令行方式不太友好：<br><img src="https://i.loli.net/2020/01/30/mZvD7HSu3sALFzb.png" alt="使用命令行访问MongoDB数据.png"></p>
 <p>可以借助一些可视化软件，我这里使用pycharm下的Mongo Plugin插件。<br><a href="https://blog.csdn.net/wang_hugh/article/details/80547789" target="_blank" rel="noopener">安装方式</a></p>
 <p>结果如图：<br><img src="https://i.loli.net/2020/01/30/D94zSKk31U2uo8b.png" alt="数据库及各个表格.png"></p>
 <p>也可以使用pymongo导出数据：</p>
