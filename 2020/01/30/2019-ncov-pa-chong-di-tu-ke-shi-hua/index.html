@@ -4,9 +4,8 @@
 
 <head>
     <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
-    <meta name="keywords" content="配置hexo博客">
-    <meta name="description" content="使用github配置个人博客安装node.jsHexo基于Node.js，所以您还需要安装Node.js。Node.js的官网下载地址： nodejs.cn/download/
-使用 npm 安装 Hexo(演示是在windows-64环境">
+    <meta name="keywords" content="2019-nCov 爬虫、地图可视化">
+    <meta name="description" content="爬虫获取数据、MongoDB存储数据、导出数据可视化">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -14,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>使用github和hexo配置个人博客 | 特里斯丹</title>
+    <title>2019-nCov 爬虫、地图可视化 | 特里斯丹</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -305,12 +304,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://i.loli.net/2020/01/30/DMcSiAdjahVlQpw.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">使用github和hexo配置个人博客</h1>
+                    <h1 class="description center-align post-title">2019-nCov 爬虫、地图可视化</h1>
                 </div>
             </div>
         </div>
@@ -425,9 +424,17 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E5%8F%AF%E8%A7%86%E5%8C%96/">
+                                <span class="chip bg-color">可视化</span>
+                            </a>
+                        
+                            <a href="/tags/pyecharts/">
+                                <span class="chip bg-color">pyecharts</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -435,8 +442,16 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/hexo/" class="post-category">
-                                hexo
+                            <a href="/categories/%E7%88%AC%E8%99%AB/" class="post-category">
+                                爬虫
+                            </a>
+                        
+                            <a href="/categories/%E7%88%AC%E8%99%AB/MongoDB/" class="post-category">
+                                MongoDB
+                            </a>
+                        
+                            <a href="/categories/%E7%88%AC%E8%99%AB/MongoDB/pyecharts/" class="post-category">
+                                pyecharts
                             </a>
                         
                     </div>
@@ -448,7 +463,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-12-18
+                    2020-01-30
                 </div>
                 
 
@@ -457,7 +472,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    556
+                    1.2k
                 </div>
                 
 
@@ -475,60 +490,120 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="使用github配置个人博客"><a href="#使用github配置个人博客" class="headerlink" title="使用github配置个人博客"></a>使用github配置个人博客</h1><h2 id="安装node-js"><a href="#安装node-js" class="headerlink" title="安装node.js"></a>安装node.js</h2><p>Hexo基于Node.js，所以您还需要安装Node.js。Node.js的官网下载地址： <a href="http://nodejs.cn/download/%EF%BC%8C%E9%80%89%E6%8B%A9%E9%80%82%E5%90%88%E6%82%A8%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%AE%89%E8%A3%85%E7%A8%8B%E5%BA%8F%E5%8C%85%E3%80%82" target="_blank" rel="noopener">nodejs.cn/download/</a></p>
-<h2 id="使用-npm-安装-Hexo-演示是在windows-64环境下-："><a href="#使用-npm-安装-Hexo-演示是在windows-64环境下-：" class="headerlink" title="使用 npm 安装 Hexo(演示是在windows-64环境下)："></a>使用 npm 安装 Hexo(演示是在windows-64环境下)：</h2><p>npm install -g hexo-cli</p>
-<p><img src="/media/41c9f1fe8f1e95386debcb7d3a9ee5d7.png" alt=""></p>
-<h2 id="使用-Hexo"><a href="#使用-Hexo" class="headerlink" title="使用 Hexo"></a>使用 Hexo</h2><p>指定一个空目录初始化hexo所需文件：</p>
-<p>命令：</p>
-<pre><code>hexo init 目录名(要求是空目录)</code></pre><p><img src="/media/c69bbf55ae4eeb8514e4d459441835d0.png" alt=""></p>
-<p>新建完成后，生成如下目录文件：</p>
-<pre><code>.gitignore
-node_modules
-package-lock.json
-package.json
-scaffolds
-source
-themes
-_config.yml</code></pre><h2 id="hexo-项目的文件说明"><a href="#hexo-项目的文件说明" class="headerlink" title="hexo 项目的文件说明"></a>hexo 项目的文件说明</h2><h3 id="config-yml-是配置信息"><a href="#config-yml-是配置信息" class="headerlink" title="_config.yml 是配置信息"></a>_config.yml 是配置信息</h3><p>网站的 配置 信息，您可以在此配置大部分的参数。 应用程序的信息。<br>更多关于该文件的说明可以参考：<a href="https://hexo.io/zh-cn/docs/configuration%E3%80%82" target="_blank" rel="noopener">hexo.io/zh-cn/docs/…</a></p>
-<h3 id="scaffolds-模板文件"><a href="#scaffolds-模板文件" class="headerlink" title="scaffolds 模板文件"></a>scaffolds 模板文件</h3><p><a href="https://hexo.io/zh-cn/docs/writing" target="_blank" rel="noopener">模板</a>文件夹，当您新建文章时，hexo会根据模板来创建新的文件。</p>
-<p>Hexo的模板是指在新建的markdown文件中默认填充的内容。例如，如果您修改scaffold/post.md中的Front-matter内容，那么每次新建一篇文章时都会包含这个修改。</p>
-<h3 id="source"><a href="#source" class="headerlink" title="source"></a>source</h3><p>资源文件夹是存放用户资源的地方。除 _posts 文件夹之外，开头命名为(下划线)的文件<br>/ 文件夹和隐藏的文件将会被忽略。 Markdown 和 HTML文件会被解析并放到 public<br>文件夹，而其他文件会被拷贝过去。</p>
-<h3 id="themes"><a href="#themes" class="headerlink" title="themes"></a>themes</h3><p><a href="https://hexo.io/zh-cn/docs/themes" target="_blank" rel="noopener">主题</a>文件夹。Hexo 会根据主题来生成静态页面。</p>
-<h2 id="浏览博客雏形"><a href="#浏览博客雏形" class="headerlink" title="浏览博客雏形"></a>浏览博客雏形</h2><p>进入hexo项目目录中，使用如下命令开启博客服务：</p>
-<pre><code>hexo s</code></pre><p><img src="/media/403c864af467f9402f6effcf8a79c989.png" alt=""></p>
-<p>浏览器中访问：<a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000</a>。</p>
-<p>此时看到的是source\_posts文件夹下的hello-world.md</p>
-<h2 id="安装-hexo-deployer-git"><a href="#安装-hexo-deployer-git" class="headerlink" title="安装 hexo-deployer-git"></a>安装 hexo-deployer-git</h2><p><code>npm install hexo-deployer-git --save</code></p>
-<p><img src="/media/a97adecbd96779fc5d15559f9891ac80.png" alt=""></p>
-<h2 id="Hexo-主题"><a href="#Hexo-主题" class="headerlink" title="Hexo 主题"></a>Hexo 主题</h2><p>您可以在 <a href="https://hexo.io/themes/index.html" target="_blank" rel="noopener">hexo.io/themes/inde…</a> 进行主题的挑选更换。<br>下载好后放在themes文件夹内，同时在 _config.yml 中进行配置变更就好了。</p>
-<h2 id="上传到github"><a href="#上传到github" class="headerlink" title="上传到github"></a>上传到github</h2><h3 id="需要修改的地方（URL）"><a href="#需要修改的地方（URL）" class="headerlink" title="需要修改的地方（URL）"></a>需要修改的地方（URL）</h3><pre><code># URL
+                <h1 id="2019-nCov-爬虫、地图可视化"><a href="#2019-nCov-爬虫、地图可视化" class="headerlink" title="2019-nCov 爬虫、地图可视化"></a>2019-nCov 爬虫、地图可视化</h1><p>我们学校连发了几条通知，刚开始说不让提前去，然后是不让去，现在是“提前去的话，全校通报批评”。</p>
+<p>这段时间医护人员前赴后继、奋战在最前线，他们是最可敬的人，相信武汉一定会好起来的，<strong>武汉加油！</strong></p>
+<p>看到几个有意思的项目，爬取丁香园网站的疫情数据，存储在MongoDB数据库，以及地图形式的可视化，代码不长，很方便学习、练手，这里做个笔记，分享给大家。</p>
+<h2 id="大纲"><a href="#大纲" class="headerlink" title="大纲"></a>大纲</h2><ol>
+<li>爬虫获取数据</li>
+<li>MongoDB存储数据</li>
+<li>导出数据并可视化</li>
+<li>可视化</li>
+<li>代码实现</li>
+<li>reference</li>
+</ol>
+<h2 id="1-爬虫获取数据"><a href="#1-爬虫获取数据" class="headerlink" title="1. 爬虫获取数据"></a>1. 爬虫获取数据</h2><h3 id="requests"><a href="#requests" class="headerlink" title="requests"></a>requests</h3><p>完成浏览器的各种操作（get、post等），本项目用requets的get方法，获取丁香园网页内容。<br>基本用法：</p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token operator">>></span><span class="token operator">></span> <span class="token keyword">import</span> requests
+<span class="token operator">>></span><span class="token operator">></span> r <span class="token operator">=</span> requests<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">'https://www.python.org'</span><span class="token punctuation">)</span>
+<span class="token operator">>></span><span class="token operator">></span> r<span class="token punctuation">.</span>status_code
+<span class="token number">200</span>
+<span class="token operator">>></span><span class="token operator">></span> <span class="token string">'Python is a programming language'</span> <span class="token keyword">in</span> r<span class="token punctuation">.</span>content
+<span class="token boolean">True</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true"># 访问丁香园网站</span>
+r <span class="token operator">=</span> requests<span class="token punctuation">.</span>session<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>get<span class="token punctuation">(</span>url<span class="token operator">=</span><span class="token string">'https://3g.dxy.cn/newh5/view/pneumonia'</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h3 id="re"><a href="#re" class="headerlink" title="re"></a>re</h3><p>正则表达式模块，有很强大的语法，主要用于字符串的模式匹配。</p>
+<h3 id="BeautifulSoup"><a href="#BeautifulSoup" class="headerlink" title="BeautifulSoup"></a>BeautifulSoup</h3><p>用于接收一个HTML或XML字符串，然后将其进行格式化，之后遍可以使用他提供的方法进行快速查找指定元素，从而使得在HTML或XML中查找指定元素变得简单。</p>
+<p>如果只用正则表达式的话，通常需要些很长很复杂的pattern， 而借助bs，可以很方便的利用html、JavaScript、css的属性，很容易实现和理解。</p>
+<pre class="line-numbers language-python"><code class="language-python">soup <span class="token operator">=</span> BeautifulSoup<span class="token punctuation">(</span>r<span class="token punctuation">.</span>content<span class="token punctuation">,</span> <span class="token string">'lxml'</span><span class="token punctuation">)</span> 
+overall_information <span class="token operator">=</span> re<span class="token punctuation">.</span>search<span class="token punctuation">(</span>r<span class="token string">'\{("id".*?)\}'</span><span class="token punctuation">,</span>str<span class="token punctuation">(</span>soup<span class="token punctuation">.</span>find<span class="token punctuation">(</span><span class="token string">'script'</span><span class="token punctuation">,</span> attrs<span class="token operator">=</span><span class="token punctuation">{</span><span class="token string">'id'</span><span class="token punctuation">:</span> <span class="token string">'getStatisticsService'</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>比如这一句，pattern为正则表达式格式，搜索范围用bs限制在<code>&#39;getStatisticsService&#39;</code>属性段内。</p>
+<h2 id="2-MongoDB存储数据"><a href="#2-MongoDB存储数据" class="headerlink" title="2. MongoDB存储数据"></a>2. MongoDB存储数据</h2><p>MongoDB是很常用的非关系型数据库，与之相对的是如MySQL等关系型数据库。</p>
+<ul>
+<li><p>关系模型指的就是二维表格模型，而一个关系型数据库就是由二维表及其之间的联系所组成的一个数据组织。一般是一个表格链接另一个表格（通过指定字段）、再链接另一个表格。</p>
+</li>
+<li><p>非关系型数据库以键值对存储，且结构不固定，每一个元组可以有不一样的字段，每个元组可以根据需要增加一些自己的键值对，不局限于固定的结构，可以减少一些时间和空间的开销。key-value数据库的主要特点是具有极高的并发读写性能.</p>
+</li>
+</ul>
+<ol>
+<li><p>下载安装MongoDB数据库（完全开源、免费）<br> <a href="https://www.mongodb.com/" target="_blank" rel="noopener">https://www.mongodb.com/</a>  </p>
+</li>
+<li><p>安装pymongo库<br> <code>pip install pymongo</code></p>
+</li>
+<li><p>新建数据库  </p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> pymongo <span class="token keyword">import</span> MongoClient
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+</ol>
+<h1 id="使用自己的本地数据库，端口默认为27017"><a href="#使用自己的本地数据库，端口默认为27017" class="headerlink" title="使用自己的本地数据库，端口默认为27017"></a>使用自己的本地数据库，端口默认为27017</h1><p>client = MongoClient(‘localhost’, 27017)</p>
+<h1 id="数据库命名为2019-nCov"><a href="#数据库命名为2019-nCov" class="headerlink" title="数据库命名为2019-nCov"></a>数据库命名为2019-nCov</h1><p>db = client[‘2019-nCov’]</p>
+<pre><code>
+- 插入/查找字段
+```python
+class DB:
+    def __init__(self):
+        self.db = db
 
-## If your site is put in a subdirectory, set url as
-&#39;http://yoursite.com/child&#39; and root as &#39;/child/&#39;
+    def insert(self, collection, data):
+        self.db[collection].insert(data)  
 
-url: https://weidafeng.github.io/
+    def find_one(self, collection, data=None):
+        return self.db[collection].find_one(data)</code></pre><h2 id="3-导出数据"><a href="#3-导出数据" class="headerlink" title="3. 导出数据"></a>3. 导出数据</h2><p>爬取完毕后，可以在MongoDB数据库里查看数据，命令行方式不太友好：<br><img src="https://i.loli.net/2020/01/30/mZvD7HSu3sALFzb.png" alt="使用命令行访问MongoDB数据.png"></p>
+<p>可以借助一些可视化软件，我这里使用pycharm下的Mongo Plugin插件。<br><a href="https://blog.csdn.net/wang_hugh/article/details/80547789" target="_blank" rel="noopener">安装方式</a></p>
+<p>结果如图：<br><img src="https://i.loli.net/2020/01/30/D94zSKk31U2uo8b.png" alt="数据库及各个表格.png"></p>
+<p>也可以使用pymongo导出数据：</p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true"># 连接mongodb数据库</span>
+client <span class="token operator">=</span> pymongo<span class="token punctuation">.</span>MongoClient<span class="token punctuation">(</span><span class="token string">"localhost"</span><span class="token punctuation">,</span> <span class="token number">27017</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true"># 连接数据库</span>
+db <span class="token operator">=</span> client<span class="token punctuation">[</span><span class="token string">"2019-nCov"</span><span class="token punctuation">]</span>
+<span class="token comment" spellcheck="true"># 数据表</span>
+WUHAN_DB <span class="token operator">=</span> db<span class="token punctuation">[</span><span class="token string">"DXYProvince"</span><span class="token punctuation">]</span>
 
-root: /weidafeng.github.io/
+<span class="token comment" spellcheck="true"># 将mongodb中的数据读出</span>
+<span class="token comment" spellcheck="true"># 查找、过滤、排序</span>
+data <span class="token operator">=</span> pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span>list<span class="token punctuation">(</span>WUHAN_DB<span class="token punctuation">.</span>find<span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token string">'_id'</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token string">'comment'</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token string">'country'</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token string">'countryType'</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token string">'modifyTime'</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span><span class="token string">'operator'</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token string">'provinceName'</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token string">'provinceId'</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token string">'crawlTime'</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token string">'createTime'</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token string">'cityName'</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token string">'suspectedCount'</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span>sort<span class="token punctuation">(</span><span class="token string">'confirmedCount'</span><span class="token punctuation">,</span> pymongo<span class="token punctuation">.</span>DESCENDING<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 
-permalink: :year/:month/:day/:title/
+<span class="token comment" spellcheck="true"># 保存为csv格式</span>
+data<span class="token punctuation">.</span>to_csv<span class="token punctuation">(</span><span class="token string">'wuhan.csv'</span><span class="token punctuation">,</span> encoding<span class="token operator">=</span><span class="token string">'utf-8'</span><span class="token punctuation">,</span> index<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="4-可视化"><a href="#4-可视化" class="headerlink" title="4. 可视化"></a>4. 可视化</h2><p>借助第三方库 pyecharts 可以极其简便地实现地图形式的可视化。</p>
+<ul>
+<li><p>安装：</p>
+<ul>
+<li>pip install pyecharts==0.5.1  </li>
+<li>pip install echarts-countries-pypkg   （额外安装地图，否则显示不完全）</li>
+</ul>
+</li>
+<li><p>使用：<br>简单的9行代码就能实现  </p>
+</li>
+</ul>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> pyecharts <span class="token keyword">import</span> Map
+<span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
 
-permalink_defaults:
+value <span class="token operator">=</span> np<span class="token punctuation">.</span>array<span class="token punctuation">(</span>
+    <span class="token punctuation">[</span><span class="token number">1052</span><span class="token punctuation">,</span> <span class="token number">104</span><span class="token punctuation">,</span> <span class="token number">98</span><span class="token punctuation">,</span> <span class="token number">83</span><span class="token punctuation">,</span> <span class="token number">75</span><span class="token punctuation">,</span> <span class="token number">69</span><span class="token punctuation">,</span> <span class="token number">60</span><span class="token punctuation">,</span> <span class="token number">51</span><span class="token punctuation">,</span> <span class="token number">44</span><span class="token punctuation">,</span> <span class="token number">40</span><span class="token punctuation">,</span> <span class="token number">39</span><span class="token punctuation">,</span> <span class="token number">33</span><span class="token punctuation">,</span> <span class="token number">31</span><span class="token punctuation">,</span> <span class="token number">19</span><span class="token punctuation">,</span> <span class="token number">19</span><span class="token punctuation">,</span> <span class="token number">18</span><span class="token punctuation">,</span> <span class="token number">18</span><span class="token punctuation">,</span> <span class="token number">15</span><span class="token punctuation">,</span> <span class="token number">15</span><span class="token punctuation">,</span> <span class="token number">13</span><span class="token punctuation">,</span> <span class="token number">11</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+value <span class="token operator">=</span> np<span class="token punctuation">.</span>log10<span class="token punctuation">(</span>value<span class="token punctuation">)</span>
+attr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"湖北"</span><span class="token punctuation">,</span> <span class="token string">"浙江"</span><span class="token punctuation">,</span> <span class="token string">"广东"</span><span class="token punctuation">,</span> <span class="token string">"河南"</span><span class="token punctuation">,</span> <span class="token string">"重庆"</span><span class="token punctuation">,</span> <span class="token string">"湖南"</span><span class="token punctuation">,</span> <span class="token string">"安徽"</span><span class="token punctuation">,</span> <span class="token string">"北京"</span><span class="token punctuation">,</span> <span class="token string">"四川"</span><span class="token punctuation">,</span> <span class="token string">"上海"</span><span class="token punctuation">,</span> <span class="token string">"山东"</span><span class="token punctuation">,</span> <span class="token string">"广西"</span><span class="token punctuation">,</span> <span class="token string">"江苏"</span><span class="token punctuation">,</span> <span class="token string">"海南"</span><span class="token punctuation">,</span> <span class="token string">"辽宁"</span><span class="token punctuation">,</span> <span class="token string">"江西"</span><span class="token punctuation">,</span> <span class="token string">"福建"</span><span class="token punctuation">,</span> <span class="token string">"陕西"</span><span class="token punctuation">,</span> <span class="token string">"黑龙江"</span><span class="token punctuation">,</span> <span class="token string">"河北"</span><span class="token punctuation">,</span> <span class="token string">"云南"</span><span class="token punctuation">,</span> <span class="token string">"天津"</span><span class="token punctuation">,</span> <span class="token string">"山西"</span><span class="token punctuation">,</span> <span class="token string">"内蒙古"</span><span class="token punctuation">,</span> <span class="token string">"甘肃"</span><span class="token punctuation">,</span> <span class="token string">"香港"</span><span class="token punctuation">,</span> <span class="token string">"贵州"</span><span class="token punctuation">,</span> <span class="token string">"吉林"</span><span class="token punctuation">,</span> <span class="token string">"宁夏"</span><span class="token punctuation">,</span> <span class="token string">"台湾"</span><span class="token punctuation">,</span> <span class="token string">"新疆"</span><span class="token punctuation">,</span> <span class="token string">"青海"</span><span class="token punctuation">]</span>
 
-pretty_urls:</code></pre><h3 id="需要修改的地方（Deployment）"><a href="#需要修改的地方（Deployment）" class="headerlink" title="需要修改的地方（Deployment）"></a>需要修改的地方（<code>Deployment</code>）</h3><pre><code>
-# Deployment
+map <span class="token operator">=</span> Map<span class="token punctuation">(</span><span class="token string">"截至 2020-1-26 12:13:19 数据统计"</span><span class="token punctuation">,</span> width<span class="token operator">=</span><span class="token number">1000</span><span class="token punctuation">,</span> height<span class="token operator">=</span><span class="token number">800</span><span class="token punctuation">)</span>
 
-## Docs: https://hexo.io/docs/deployment.html
+map<span class="token punctuation">.</span>add<span class="token punctuation">(</span><span class="token string">"name-wdf"</span><span class="token punctuation">,</span> attr<span class="token punctuation">,</span> value<span class="token punctuation">,</span> is_map_symbol_show<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> maptype<span class="token operator">=</span><span class="token string">"china"</span><span class="token punctuation">,</span> is_visualmap<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> visual_text_color<span class="token operator">=</span><span class="token string">'#000'</span><span class="token punctuation">,</span> is_label_show<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> visual_range<span class="token operator">=</span><span class="token punctuation">[</span>np<span class="token punctuation">.</span>min<span class="token punctuation">(</span>value<span class="token punctuation">)</span><span class="token punctuation">,</span> np<span class="token punctuation">.</span>max<span class="token punctuation">(</span>value<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+map<span class="token punctuation">.</span>render<span class="token punctuation">(</span><span class="token string">'render.html'</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>结果：<br><img src="https://i.loli.net/2020/01/30/DMcSiAdjahVlQpw.png" alt="可视化结果.png"></li>
+</ul>
+<h2 id="5-使用说明"><a href="#5-使用说明" class="headerlink" title="5. 使用说明"></a>5. 使用说明</h2><p>github：<br><a href="https://github.com/weidafeng/2019-nCov-Crawer-and-Visualization" target="_blank" rel="noopener">https://github.com/weidafeng/2019-nCov-Crawer-and-Visualization</a></p>
+<p>usage：  </p>
+<ol>
+<li>python main.py  # 默认每分钟爬取一次，一次爬取后可以ctrl+C 关闭</li>
+<li>python render_map.py  # 地图可视化</li>
+</ol>
+<h2 id="6-reference"><a href="#6-reference" class="headerlink" title="6. reference"></a>6. reference</h2><ol>
+<li><a href="https://zhuanlan.zhihu.com/p/104026698" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/104026698</a> </li>
+<li><a href="https://github.com/BlankerL/DXY-2019-nCoV-Crawler" target="_blank" rel="noopener">https://github.com/BlankerL/DXY-2019-nCoV-Crawler</a></li>
+</ol>
 
-deploy:
-
-type: git
-
-repo: git\@github.com:weidafeng/weidafeng.github.io.git
-
-branch: master
-
-message: &#39;bulid the first blog with hexo&#39;</code></pre><h3 id="命令："><a href="#命令：" class="headerlink" title="命令："></a>命令：</h3><pre><code>hexo clean
-hexo d -g</code></pre>
             </div>
             <hr/>
 
@@ -553,7 +628,7 @@ hexo d -g</code></pre>
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://weidafeng.github.io/2019/12/18/shi-yong-github-he-hexo-pei-zhi-ge-ren-bo-ke/">https://weidafeng.github.io/2019/12/18/shi-yong-github-he-hexo-pei-zhi-ge-ren-bo-ke/</a>
+                    <a href="https://weidafeng.github.io/2020/01/30/2019-ncov-pa-chong-di-tu-ke-shi-hua/">https://weidafeng.github.io/2020/01/30/2019-ncov-pa-chong-di-tu-ke-shi-hua/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -590,7 +665,15 @@ hexo d -g</code></pre>
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/%E5%8F%AF%E8%A7%86%E5%8C%96/">
+                                    <span class="chip bg-color">可视化</span>
+                                </a>
+                            
+                                <a href="/tags/pyecharts/">
+                                    <span class="chip bg-color">pyecharts</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -759,7 +842,7 @@ hexo d -g</code></pre>
         repo: 'weidafeng.github.io',
         owner: 'weidafeng',
         admin: null,
-        id: '2019-12-18T22-05-28',
+        id: '2020-01-30T20-57-17',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -780,42 +863,61 @@ hexo d -g</code></pre>
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2019/12/19/bo-ke-shuo-ming/">
+                <a href="/2020/01/30/2019-ncov-pa-chong-di-tu-ke-shi-hua/">
                     <div class="card-image">
                         
+                        <img src="https://i.loli.net/2020/01/30/DMcSiAdjahVlQpw.png" class="responsive-img" alt="2019-nCov 爬虫、地图可视化">
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="博客说明">
-                        
-                        <span class="card-title">博客说明</span>
+                        <span class="card-title">2019-nCov 爬虫、地图可视化</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            博客说明从19年1月20日开始，我把日常读的论文记录下来，除了做个笔记、方便回顾，更主要的原因是给毕业论文攒字数。
-当初考虑过同步到网络，但怕毕设论文用了、影响查重，所以作罢。
-但到现在，12月20日，将近一年的时间里，读了几十篇论文，总结
+                            爬虫获取数据、MongoDB存储数据、导出数据可视化
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2019-12-19
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-01-30
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E9%9A%8F%E7%AC%94/" class="post-category">
-                                    随笔
+                            <a href="/categories/%E7%88%AC%E8%99%AB/" class="post-category">
+                                    爬虫
+                                </a>
+                            
+                            <a href="/categories/%E7%88%AC%E8%99%AB/MongoDB/" class="post-category">
+                                    MongoDB
+                                </a>
+                            
+                            <a href="/categories/%E7%88%AC%E8%99%AB/MongoDB/pyecharts/" class="post-category">
+                                    pyecharts
                                 </a>
                             
                             
                         </span>
                     </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E5%8F%AF%E8%A7%86%E5%8C%96/">
+                        <span class="chip bg-color">可视化</span>
+                    </a>
+                    
+                    <a href="/tags/pyecharts/">
+                        <span class="chip bg-color">pyecharts</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -827,32 +929,43 @@ hexo d -g</code></pre>
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/12/11/hello-world/">
+                <a href="/2019/12/28/python-matplotlib-practices/">
                     <div class="card-image">
                         
+                        <img src="https://i.loli.net/2019/12/28/QrE5KJbcngvtFLD.png" class="responsive-img" alt="《Python数据可视化之matplotlib实践》配套代码">
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="Hello World">
-                        
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">《Python数据可视化之matplotlib实践》配套代码</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
+                            《Python数据可视化之matplotlib实践》配套代码
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-12-11
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-12-28
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Tristan
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/matplotlib/" class="post-category">
+                                    matplotlib
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/matplotlib/">
+                        <span class="chip bg-color">matplotlib</span>
+                    </a>
+                    
                 </div>
                 
             </div>

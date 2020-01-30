@@ -4,8 +4,8 @@
 
 <head>
     <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
-    <meta name="keywords" content="留言板, Computer Vision; Deep Learning;">
-    <meta name="description" content="留言板 | 特里斯丹">
+    <meta name="keywords" content="标签: 可视化, Computer Vision; Deep Learning;">
+    <meta name="description" content="标签: 可视化 | 特里斯丹">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>留言板 | 特里斯丹</title>
+    <title>标签: 可视化 | 特里斯丹</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -342,54 +342,98 @@
 </div>
 
 <main class="content">
-    <div id="contact" class="container chip-container">
-        <div class="card">
-            <div class="card-content">
-                <div class="tag-title center-align">
-                    <i class="fas fa-comments"></i>&nbsp;&nbsp;留言板
-                </div>
+
+    
+
+<div id="tags" class="container chip-container">
+    <div class="card">
+        <div class="card-content">
+            <div class="tag-title center-align">
+                <i class="fas fa-tags"></i>&nbsp;&nbsp;文章标签
+            </div>
+            <div class="tag-chips">
+                
+                
+                <a href="/tags/%E5%8F%AF%E8%A7%86%E5%8C%96/" title="可视化: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-active "
+                            data-tagname="可视化" style="background-color: #F9EBEA;">可视化
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/pyecharts/" title="pyecharts: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="pyecharts" style="background-color: #F5EEF8;">pyecharts
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/matplotlib/" title="matplotlib: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="matplotlib" style="background-color: #D5F5E3;">matplotlib
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
                 
             </div>
         </div>
-        <div class="card">
-            
-            <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
-<link rel="stylesheet" href="/css/my-gitalk.css">
-
-<div class="card gitalk-card" data-aos="fade-up">
-    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; left: 20px; top: 15px; padding-bottom: 5px;">
-        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
-        <span>评论</span>
     </div>
-    <div id="gitalk-container" class="card-content"></div>
 </div>
 
-<script src="/libs/gitalk/gitalk.min.js"></script>
-<script>
-    let gitalk = new Gitalk({
-        clientID: 'f2cd381d3cccb13bb115',
-        clientSecret: '1f5eddb93791fe90d489afd605bfa676b46fe77e',
-        repo: 'weidafeng.github.io',
-        owner: 'weidafeng',
-        admin: null,
-        id: '2019-12-12T14-40-08',
-        distractionFreeMode: false  // Facebook-like distraction free mode
-    });
+    
 
-    gitalk.render('gitalk-container');
-</script>
+    <article id="articles" class="container articles">
+        <div class="row tags-posts">
             
-
             
-
-            
-
-            
-
+            <div class="article tag-post col s12 m6 l4" data-tags="可视化, pyecharts" data-aos="fade-up">
+                <div class="card">
+                    <a href="/2020/01/30/2019-ncov-pa-chong-di-tu-ke-shi-hua/">
+                        <div class="card-image tag-image">
+                            
+                            <img src="https://i.loli.net/2020/01/30/DMcSiAdjahVlQpw.png" class="responsive-img" alt="2019-nCov 爬虫、地图可视化">
+                            
+                            <span class="card-title">2019-nCov 爬虫、地图可视化</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-01-30
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E7%88%AC%E8%99%AB/" class="post-category">
+                                爬虫
+                                </a>
+                                
+                                <a href="/categories/%E7%88%AC%E8%99%AB/MongoDB/" class="post-category">
+                                MongoDB
+                                </a>
+                                
+                                <a href="/categories/%E7%88%AC%E8%99%AB/MongoDB/pyecharts/" class="post-category">
+                                pyecharts
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
             
         </div>
-    </div>
+    </article>
 </main>
+
+
 
 
     <footer class="page-footer bg-color">
