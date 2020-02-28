@@ -4,6 +4,44 @@
   
     
     <entry>
+      <title>本地访问远程服务器的tensorboard</title>
+      <link href="/2020/02/28/ben-di-fang-wen-yuan-cheng-fu-wu-qi-de-tensorboard/"/>
+      <url>/2020/02/28/ben-di-fang-wen-yuan-cheng-fu-wu-qi-de-tensorboard/</url>
+      
+        <content type="html"><![CDATA[<h1 id="本地访问远程服务器的tensorboard"><a href="#本地访问远程服务器的tensorboard" class="headerlink" title="本地访问远程服务器的tensorboard"></a>本地访问远程服务器的tensorboard</h1><h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><p>建立ssh隧道，实现远程端口到本地端口的转发</p><p>具体来说就是将远程服务器的6006端口（tensorboard默认将数据放在6006端口）转发到本地的16006端口，在本地对16006端口的访问即是对远程6006端口的访问</p><h2 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h2><p>以MobaXterm为例</p><h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><h3 id="ifconfig命令查看当前IP地址"><a href="#ifconfig命令查看当前IP地址" class="headerlink" title="ifconfig命令查看当前IP地址"></a>ifconfig命令查看当前IP地址</h3><p><img src="/media/c2c22bbec56743bf1598813e709abbdc.png" alt=""></p><h3 id="mobaxterm工具——隧道"><a href="#mobaxterm工具——隧道" class="headerlink" title="mobaxterm工具——隧道"></a>mobaxterm工具——隧道</h3><p><img src="/media/20772256b263f62433232c03e284ab94.png" alt=""></p><h3 id="配置ssh-tunnel"><a href="#配置ssh-tunnel" class="headerlink" title="配置ssh tunnel"></a>配置ssh tunnel</h3><p><img src="/media/f2c940bb933b2bc15f4ad3b31fa0c3b1.jpg" alt=""></p><h3 id="配置结果"><a href="#配置结果" class="headerlink" title="配置结果"></a>配置结果</h3><p><img src="/media/89743e36063e76eb8b1f923501f94c8c.png" alt=""></p><h3 id="本地访问"><a href="#本地访问" class="headerlink" title="本地访问"></a>本地访问</h3><p>本地浏览器输入localhost:16006 (或 127.0.0.1:16006)</p><p><img src="/media/c7cb14ce4f8807230808d0da46c35288.png" alt=""></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 工具技巧 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 工具技巧 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>~$llo-world</title>
+      <link href="/2020/02/28/llo-world/"/>
+      <url>/2020/02/28/llo-world/</url>
+      
+        <content type="html"><![CDATA[<p>wdfwdf!X�M�^���X��~�!X�^�l���’�����’�����’���tz�|a��w!X@ߜ�</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>2019-nCov 爬虫、地图可视化</title>
       <link href="/2020/01/30/2019-ncov-pa-chong-di-tu-ke-shi-hua/"/>
       <url>/2020/01/30/2019-ncov-pa-chong-di-tu-ke-shi-hua/</url>
