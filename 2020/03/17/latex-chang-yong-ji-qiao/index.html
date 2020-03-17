@@ -1,0 +1,1728 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+    <meta name="keywords" content="LaTeX常用技巧">
+    <meta name="description" content="LaTeX入门, LaTeX常用技巧">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>LaTeX常用技巧 | 特里斯丹</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+    
+    <script src="/libs/jquery/jquery.min.js"></script>
+    
+<meta name="generator" content="Hexo 4.1.0"><link rel="stylesheet" href="/css/prism.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head>
+
+
+<body>
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper head-container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">特里斯丹</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">特里斯丹</div>
+        <div class="logo-desc">
+            
+            这里我们有梦 关于文学 关于爱情 关于穿越世界的旅行
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			Contact
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/weidafeng" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/weidafeng" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">LaTeX常用技巧</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        height: calc(100vh - 250px);
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #toc-content .is-active-link::before {
+        background-color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/LaTeX/">
+                                <span class="chip bg-color">LaTeX</span>
+                            </a>
+                        
+                            <a href="/tags/TOOLS/">
+                                <span class="chip bg-color">TOOLS</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/LaTeX/" class="post-category">
+                                LaTeX
+                            </a>
+                        
+                            <a href="/categories/LaTeX/TOOLS/" class="post-category">
+                                TOOLS
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2020-03-17
+                </div>
+                
+
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    4k
+                </div>
+                
+
+                
+				
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+            
+        </div>
+        <hr class="clearfix">
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="LaTeX常用语法及技巧"><a href="#LaTeX常用语法及技巧" class="headerlink" title="LaTeX常用语法及技巧"></a>LaTeX常用语法及技巧</h1><h2 id="软件安装及配置"><a href="#软件安装及配置" class="headerlink" title="软件安装及配置"></a>软件安装及配置</h2><ol>
+<li>MikTeX（tex环境，windows系统首推，轻量级，~200MB）<br><a href="https://miktex.org/download" target="_blank" rel="noopener">https://miktex.org/download</a></li>
+<li>Sublime text 3（可选，编辑器，搜索sublime text配置tex）</li>
+</ol>
+<h2 id="参考资料及众多经典教程"><a href="#参考资料及众多经典教程" class="headerlink" title="参考资料及众多经典教程"></a>参考资料及众多经典教程</h2><p>公众号<code>特里斯丹</code>回复<code>latex教程</code>获取百度云下载链接。</p>
+<p>或者在本文文末查看。</p>
+<h2 id="支持中文的三种方式"><a href="#支持中文的三种方式" class="headerlink" title="支持中文的三种方式"></a>支持中文的三种方式</h2><ol>
+<li>使用 ctexart 文档类（英文：documentclass）</li>
+<li>使用 ctex 宏包（英文：package）</li>
+</ol>
+<h3 id="使用-ctex-宏包（推荐）"><a href="#使用-ctex-宏包（推荐）" class="headerlink" title="使用 ctex 宏包（推荐）"></a>使用 ctex 宏包（<strong>推荐</strong>）</h3><p>除了使用 ctexart 文档类，你可以可以选择使用 ctex 宏包，一个简单例子如下：</p>
+<pre class="line-numbers language-latex"><code class="language-latex"><span class="token function selector">\documentclass</span><span class="token punctuation">{</span><span class="token keyword">article</span><span class="token punctuation">}</span>
+<span class="token function selector">\usepackage</span><span class="token punctuation">[</span>UTF8<span class="token punctuation">]</span><span class="token punctuation">{</span><span class="token keyword">ctex</span><span class="token punctuation">}</span>
+<span class="token function selector">\begin</span><span class="token punctuation">{</span><span class="token keyword">document</span><span class="token punctuation">}</span>
+你好，这是一个中文测试文档。
+<span class="token function selector">\end</span><span class="token punctuation">{</span><span class="token keyword">document</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-latex"><code class="language-latex"><span class="token comment" spellcheck="true">% ctex_test.tex</span>
+<span class="token function selector">\documentclass</span><span class="token punctuation">[</span>UTF8<span class="token punctuation">]</span><span class="token punctuation">{</span><span class="token keyword">article</span><span class="token punctuation">}</span>
+<span class="token function selector">\usepackage</span><span class="token punctuation">{</span><span class="token keyword">ctex</span><span class="token punctuation">}</span>
+<span class="token function selector">\begin</span><span class="token punctuation">{</span><span class="token keyword">document</span><span class="token punctuation">}</span>
+这是一个CTEX的utf-8编码例子，<span class="token punctuation">{</span><span class="token function selector">\kaishu</span> 这里是楷体显示<span class="token punctuation">}</span>，<span class="token punctuation">{</span><span class="token function selector">\songti</span> 这里是宋体显示<span class="token punctuation">}</span>，<span class="token punctuation">{</span><span class="token function selector">\heiti</span> 这里是黑体显示<span class="token punctuation">}</span>，<span class="token punctuation">{</span><span class="token function selector">\fangsong</span> 这里是仿宋显示<span class="token punctuation">}</span>，<span class="token punctuation">{</span><span class="token function selector">\lishu</span> 这里是隶书显示<span class="token punctuation">}</span>，<span class="token punctuation">{</span><span class="token function selector">\youyuan</span> 这里是幼圆显示<span class="token punctuation">}</span>。
+<span class="token function selector">\end</span><span class="token punctuation">{</span><span class="token keyword">document</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>使用以上代码的 LaTeX 源文件可以使用 latex，pdflatex，xelatex 或者 lualatex 命令来编译生成 PDF 文件。CTeX 开发者推荐使用 xelatex 命令编译源文件。</p>
+<h3 id="使用-ctexart"><a href="#使用-ctexart" class="headerlink" title="使用 ctexart"></a>使用 ctexart</h3><p>如果你的文章主要由中文构成，你可以考虑使用 CTeX 中的 ctexart 文档类，下面的例子展示了如何使用 ctexart 文档类来写中文文档：</p>
+<pre class="line-numbers language-latex"><code class="language-latex"><span class="token function selector">\documentclass</span><span class="token punctuation">[</span>UTF8<span class="token punctuation">]</span><span class="token punctuation">{</span><span class="token keyword">ctexart</span><span class="token punctuation">}</span>
+<span class="token function selector">\usepackage</span><span class="token punctuation">[</span>T1<span class="token punctuation">]</span><span class="token punctuation">{</span><span class="token keyword">fontenc</span><span class="token punctuation">}</span>
+
+<span class="token function selector">\begin</span><span class="token punctuation">{</span><span class="token keyword">document</span><span class="token punctuation">}</span>
+你好，这是一个测试文档。
+<span class="token function selector">\end</span><span class="token punctuation">{</span><span class="token keyword">document</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>使用 ctexart documentclass 时候，最好加上 \usepackage[T1]{fontenc}，否则某些符号显示不正确。</p>
+<h3 id="使用cjk"><a href="#使用cjk" class="headerlink" title="使用cjk"></a>使用cjk</h3><pre class="line-numbers language-latex"><code class="language-latex"><span class="token function selector">\documentclass</span><span class="token punctuation">{</span><span class="token keyword">article</span><span class="token punctuation">}</span>
+<span class="token function selector">\usepackage</span><span class="token punctuation">{</span><span class="token keyword">CJK</span><span class="token punctuation">}</span>
+<span class="token function selector">\begin</span><span class="token punctuation">{</span><span class="token keyword">document</span><span class="token punctuation">}</span>
+<span class="token function selector">\begin</span><span class="token punctuation">{</span><span class="token keyword">CJK</span><span class="token punctuation">}</span><span class="token punctuation">{</span>UTF8<span class="token punctuation">}</span><span class="token punctuation">{</span>kai<span class="token punctuation">}</span>
+
+支持中文
+
+<span class="token function selector">\end</span><span class="token punctuation">{</span><span class="token keyword">CJK</span><span class="token punctuation">}</span>
+<span class="token function selector">\end</span><span class="token punctuation">{</span><span class="token keyword">document</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="latex-常用单位"><a href="#latex-常用单位" class="headerlink" title="latex 常用单位"></a>latex 常用单位</h2><pre><code>LaTEX常用的長度單位有：
+in                英吋
+mm             公吋
+com            公分
+pt                point （1pt=0.35mm）
+em              M字母的寬度
+ex                X字母的高度</code></pre><h2 id="两栏"><a href="#两栏" class="headerlink" title="两栏"></a>两栏</h2><pre class="line-numbers language-latex"><code class="language-latex">
+<span class="token function selector">\documentclass</span><span class="token punctuation">[</span>a4paper,twocolumn, 11pt<span class="token punctuation">]</span><span class="token punctuation">{</span><span class="token keyword">article</span><span class="token punctuation">}</span> <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h2 id="表格或图像的位置"><a href="#表格或图像的位置" class="headerlink" title="表格或图像的位置"></a>表格或图像的位置</h2><pre class="line-numbers language-latex"><code class="language-latex"><span class="token function selector">\begin</span><span class="token punctuation">{</span><span class="token keyword">figure</span><span class="token punctuation">}</span><span class="token punctuation">[</span>&lt;位置><span class="token punctuation">]</span>
+图片
+<span class="token function selector">\end</span><span class="token punctuation">{</span><span class="token keyword">figure</span><span class="token punctuation">}</span>
+
+位置参数指定浮动体摆放的偏好
+    h当前位置(here),
+    t顶部(top),
+    b底部(bottom),
+    p单独成页(p)
+
+    !htb为忽略美学标准，
+    htbp为浮动图形<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="插入图片、引用图片"><a href="#插入图片、引用图片" class="headerlink" title="插入图片、引用图片"></a>插入图片、引用图片</h2><pre class="line-numbers language-latex"><code class="language-latex"><span class="token comment" spellcheck="true">% 首先需要引入图片包</span>
+<span class="token function selector">\usepackage</span><span class="token punctuation">{</span><span class="token keyword">graphicx</span><span class="token punctuation">}</span> <span class="token comment" spellcheck="true">% 插入图片的包</span>
+<span class="token function selector">\usepackage</span><span class="token punctuation">{</span><span class="token keyword">float</span><span class="token punctuation">}</span> <span class="token comment" spellcheck="true">%设置图片浮动位置的宏包</span>
+
+<span class="token function selector">\usepackage</span><span class="token punctuation">{</span><span class="token keyword">subfigure</span><span class="token punctuation">}</span> <span class="token comment" spellcheck="true">%插入多图时用子图显示的宏包</span>
+
+
+
+<span class="token comment" spellcheck="true">% 引用图片 ~\ref{fig:my_pic}</span>
+<span class="token comment" spellcheck="true">% 加不加~会有细微空格区别： </span>
+<span class="token comment" spellcheck="true">% 不加：figure1</span>
+<span class="token comment" spellcheck="true">% 加  ：figure 1</span>
+Please refer to figure~<span class="token function selector">\ref</span><span class="token punctuation">{</span><span class="token keyword">fig:my_pic</span><span class="token punctuation">}</span>
+
+
+
+<span class="token comment" spellcheck="true">% 插入图片</span>
+<span class="token function selector">\begin</span><span class="token punctuation">{</span><span class="token keyword">figure</span><span class="token punctuation">}</span><span class="token punctuation">[</span>H<span class="token punctuation">]</span> <span class="token comment" spellcheck="true">%H为当前位置，!htb为忽略美学标准，htbp为浮动图形</span>
+    <span class="token function selector">\centering</span> <span class="token comment" spellcheck="true">%图片居中</span>
+    <span class="token function selector">\includegraphics</span><span class="token punctuation">[</span>width=0.7<span class="token function selector">\textwidth</span><span class="token punctuation">]</span><span class="token punctuation">{</span>quiz1-5.png<span class="token punctuation">}</span> <span class="token comment" spellcheck="true">%插入图片，[]中设置图片大小，{}中是图片文件名</span>
+    <span class="token function selector">\caption</span><span class="token punctuation">{</span>Main name 2<span class="token punctuation">}</span> <span class="token comment" spellcheck="true">%最终文档中希望显示的图片标题</span>
+    <span class="token function selector">\label</span><span class="token punctuation">{</span><span class="token keyword">fig:my_pic</span><span class="token punctuation">}</span> <span class="token comment" spellcheck="true">%用于文内引用的标签</span>
+<span class="token function selector">\end</span><span class="token punctuation">{</span><span class="token keyword">figure</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="强制换页"><a href="#强制换页" class="headerlink" title="强制换页"></a>强制换页</h2><p>\newpage<br>\clearpage<br>在两栏模式下有区别，其中clearpage会把剩下的内容都空出来，直接到下一页；<br>而newpage只会空出当前栏的剩余内容，在下一栏接着`</p>
+<h2 id="强制换行"><a href="#强制换行" class="headerlink" title="强制换行"></a>强制换行</h2><ul>
+<li><p><code>\</code></p>
+</li>
+<li><p><code>\newline</code> </p>
+</li>
+<li><p><code>\linebreak</code></p>
+<p>強制換行的三種方法</p>
+</li>
+</ul>
+<h2 id="居中、左、右"><a href="#居中、左、右" class="headerlink" title="居中、左、右"></a>居中、左、右</h2><pre class="line-numbers language-latex"><code class="language-latex"><span class="token comment" spellcheck="true">% 居中</span>
+<span class="token function selector">\begin</span><span class="token punctuation">{</span><span class="token keyword">center</span><span class="token punctuation">}</span>
+center information.
+<span class="token function selector">\end</span><span class="token punctuation">{</span><span class="token keyword">center</span><span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">% 居左</span>
+<span class="token function selector">\begin</span><span class="token punctuation">{</span><span class="token keyword">flushleft</span><span class="token punctuation">}</span>
+left  information.
+<span class="token function selector">\end</span><span class="token punctuation">{</span><span class="token keyword">flushleft</span><span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">% 居右</span>
+<span class="token function selector">\begin</span><span class="token punctuation">{</span><span class="token keyword">flushright</span><span class="token punctuation">}</span>
+right information.
+<span class="token function selector">\end</span><span class="token punctuation">{</span><span class="token keyword">flushright</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="留白"><a href="#留白" class="headerlink" title="留白"></a>留白</h2><pre><code>%纵向留白, 负数表示向上留白
+\vspace{3cm}</code></pre><p>另外幾個常用的縱向空間指令如：<br>\bigskip（空出12pt）、<br>\medskip（空出6pt）、<br>\smallskip（空出3pt）</p>
+<h2 id="字体大小"><a href="#字体大小" class="headerlink" title="字体大小"></a>字体大小</h2><pre class="line-numbers language-latex"><code class="language-latex">
+<span class="token function selector">\tiny</span>              5pt
+<span class="token function selector">\scriptsize</span>        7pt
+<span class="token function selector">\footnotesize</span>      8pt
+<span class="token function selector">\small</span>             9pt
+<span class="token function selector">\normalsize</span>       10pt
+<span class="token function selector">\large</span>            12pt
+<span class="token function selector">\Large</span>            14pt
+<span class="token function selector">\LARGE</span>            17pt
+<span class="token function selector">\huge</span>             20pt
+<span class="token function selector">\Huge</span>             25pt<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>注意使用{}限定作用范围。</p>
+<h2 id="字体类型"><a href="#字体类型" class="headerlink" title="字体类型"></a>字体类型</h2><pre><code>\rm  （roman）
+\bf  （boldface）
+\it （italic）
+\sc  （small caps）
+\sf  （sans serif）
+\tt  （typewriter）</code></pre><h2 id="下划线"><a href="#下划线" class="headerlink" title="下划线"></a>下划线</h2><p>underline</p>
+<pre><code>Welcome to \underline{TaiWan}</code></pre><h2 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h2><p>两种模式：</p>
+<ul>
+<li><code>$...$</code> inline模式（更紧凑，放在同一行里，方便排版）</li>
+<li><code>\(…\)</code> display模式(字体更大，更方便阅读)</li>
+</ul>
+<p>上面两种都是显示在同一行中，下面两种公式单独占一行</p>
+<ul>
+<li>`$$ … $$ </li>
+<li>`[…]</li>
+</ul>
+<p>公式中间不能有空行（可以换行书写，但不能有空白行）</p>
+<h3 id="有编号的公式-begin-equation"><a href="#有编号的公式-begin-equation" class="headerlink" title="有编号的公式\begin{equation}"></a>有编号的公式\begin{equation}</h3><pre class="line-numbers language-latex"><code class="language-latex">
+<span class="token comment" spellcheck="true">% 有编号的公式\begin{equation}</span>
+<span class="token function selector">\begin</span><span class="token punctuation">{</span><span class="token keyword">equation</span><span class="token punctuation">}</span><span class="token equation string">
+a + b = c 
+</span><span class="token function selector">\end</span><span class="token punctuation">{</span><span class="token keyword">equation</span><span class="token punctuation">}</span>
+<span class="token comment" spellcheck="true">% 第二个有编号的公式，注意，这里加了label，可以通过label引用该公式，引用方式：\ref{eq:abc1}</span>
+<span class="token function selector">\begin</span><span class="token punctuation">{</span><span class="token keyword">equation</span><span class="token punctuation">}</span><span class="token equation string">
+a + b = c<span class="token equation-command regex">\label</span>{eq:abc1}
+</span><span class="token function selector">\end</span><span class="token punctuation">{</span><span class="token keyword">equation</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="编号多行公式eqnarray"><a href="#编号多行公式eqnarray" class="headerlink" title="编号多行公式eqnarray"></a>编号多行公式eqnarray</h3><pre class="line-numbers language-latex"><code class="language-latex">
+<span class="token comment" spellcheck="true">%编号多行公式eqnarray</span>
+<span class="token comment" spellcheck="true">%&amp; = &amp; 表示多行公式之间，以等号为基准对齐</span>
+<span class="token function selector">\begin</span><span class="token punctuation">{</span><span class="token keyword">eqnarray</span><span class="token punctuation">}</span><span class="token equation string">
+a + b &amp;=&amp; c <span class="token equation-command regex">\label</span>{eq:abc11} <span class="token equation-command regex">\\</span>
+a + b &amp;=&amp;c <span class="token equation-command regex">\label</span>{eq:abc12} <span class="token equation-command regex">\\</span>
+a^2 + b^2 &amp;=&amp; c^2 <span class="token equation-command regex">\label</span>{eq:abc21}<span class="token equation-command regex">\\</span>
+a + b &amp;+&amp;c <span class="token equation-command regex">\label</span>{eq:abc22} 
+</span><span class="token function selector">\end</span><span class="token punctuation">{</span><span class="token keyword">eqnarray</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="不编号多行公式eqnarray"><a href="#不编号多行公式eqnarray" class="headerlink" title="不编号多行公式eqnarray*"></a>不编号多行公式eqnarray*</h3><p>&amp; = &amp; 表示多行公式之间，以等号为基准对齐</p>
+<pre class="line-numbers language-latex"><code class="language-latex">
+<span class="token comment" spellcheck="true">%不编号多行公式eqnarray*</span>
+<span class="token function selector">\begin</span><span class="token punctuation">{</span><span class="token keyword">eqnarray*</span><span class="token punctuation">}</span><span class="token equation string">
+a + b &amp;=&amp; c <span class="token equation-command regex">\label</span>{eq:abc11} <span class="token equation-command regex">\\</span>
+a + b &amp;=&amp;c <span class="token equation-command regex">\label</span>{eq:abc12} <span class="token equation-command regex">\\</span>
+a^2 + b^2 &amp;=&amp; c^2 <span class="token equation-command regex">\label</span>{eq:abc21}<span class="token equation-command regex">\\</span>
+a + b &amp;+&amp;c <span class="token equation-command regex">\label</span>{eq:abc22} 
+</span><span class="token function selector">\end</span><span class="token punctuation">{</span><span class="token keyword">eqnarray*</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="引用公式"><a href="#引用公式" class="headerlink" title="引用公式"></a>引用公式</h3><pre class="line-numbers language-latex"><code class="language-latex">
+<span class="token comment" spellcheck="true">% 引用公式</span>
+<span class="token punctuation">[</span><span class="token function selector">\ref</span><span class="token punctuation">{</span><span class="token keyword">eq:abc1</span><span class="token punctuation">}</span><span class="token punctuation">]</span>  <span class="token comment" spellcheck="true">% 显示的格式为[1]</span>
+<span class="token function selector">\ref</span><span class="token punctuation">{</span><span class="token keyword">eq:abc1</span><span class="token punctuation">}</span>  <span class="token comment" spellcheck="true">% 显示的格式为 1</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="公式字体大小（四种）"><a href="#公式字体大小（四种）" class="headerlink" title="公式字体大小（四种）"></a>公式字体大小（四种）</h3><p>在數學式模式中，使用的文字大小有下列四種：</p>
+<pre class="line-numbers language-latex"><code class="language-latex">
+  <span class="token function selector">\displaystyle</span>
+  <span class="token function selector">\textstyle</span>
+  <span class="token function selector">\scriptstyle</span>
+  <span class="token function selector">\scriptscriptstyle</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>使用方法：類似改變字體方法<br>（1）\textstyle ……<br>（2）{\textstyle …… } </p>
+<p>inline模式一般使用\textstyle大小，<br>display模式則使用\displaystyle大小</p>
+<pre class="line-numbers language-latex"><code class="language-latex"><span class="token comment" spellcheck="true">% 改变公式大小 示例</span>
+<span class="token comment" spellcheck="true">% 正常大小模式</span>
+<span class="token equation string">\[ a_0+<span class="token equation-command regex">\frac</span>{1}{a_1+<span class="token equation-command regex">\frac</span>{1}{a_2+  <span class="token equation-command regex">\frac</span>{1}{a_3}}} \]</span>
+<span class="token comment" spellcheck="true">% 修改为显示大小</span>
+<span class="token equation string">\[ a_0+<span class="token equation-command regex">\frac</span>{1}{a_1+<span class="token equation-command regex">\displaystyle</span><span class="token equation-command regex">\frac</span>{1}{a_2+  <span class="token equation-command regex">\displaystyle</span><span class="token equation-command regex">\frac</span>{1}{a_3}}} \]</span>
+
+<span class="token comment" spellcheck="true">% 或者</span>
+<span class="token equation string">$$</span> a_0+<span class="token function selector">\frac</span><span class="token punctuation">{</span>1<span class="token punctuation">}</span><span class="token punctuation">{</span>a_1+<span class="token function selector">\displaystyle</span><span class="token function selector">\frac</span><span class="token punctuation">{</span>1<span class="token punctuation">}</span><span class="token punctuation">{</span>a_2+  <span class="token function selector">\displaystyle</span><span class="token function selector">\frac</span><span class="token punctuation">{</span>1<span class="token punctuation">}</span><span class="token punctuation">{</span>a_3<span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token equation string">$$</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="公式中字符之间的空白"><a href="#公式中字符之间的空白" class="headerlink" title="公式中字符之间的空白"></a>公式中字符之间的空白</h3><pre class="line-numbers language-latex"><code class="language-latex">
+<span class="token comment" spellcheck="true">% 不加处理的话，会自动去除所有空格、连在一起</span>
+<span class="token equation string">\[ This is an example : <span class="token equation-command regex">\frac</span> XY \]</span>
+<span class="token comment" spellcheck="true">% 小空白、大空白</span>
+<span class="token equation string">\[ This<span class="token equation-command regex">\,</span> is<span class="token equation-command regex">\,</span> an<span class="token equation-command regex">\,</span> example :<span class="token equation-command regex">\;</span> <span class="token equation-command regex">\frac</span> XY \]</span>
+
+
+    <span class="token function selector">\,</span>  小空白
+    <span class="token function selector">\:</span>  中空白
+    <span class="token function selector">\;</span>  大空白
+    <span class="token function selector">\!</span>  小空白（負）
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>方法二， \mbox在公式中插入字符描述</p>
+<pre class="line-numbers language-latex"><code class="language-latex"><span class="token equation string">\[ <span class="token equation-command regex">\mbox</span>{This is an example} : <span class="token equation-command regex">\frac</span> XY \]</span>
+或
+<span class="token equation string">$$</span> <span class="token function selector">\mbox</span><span class="token punctuation">{</span>This is an example<span class="token punctuation">}</span> : <span class="token function selector">\frac</span> XY <span class="token equation string">$$</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h3 id="自定义公式"><a href="#自定义公式" class="headerlink" title="自定义公式"></a>自定义公式</h3><p>\not 与 \stackrel</p>
+<pre class="line-numbers language-latex"><code class="language-latex"><span class="token comment" spellcheck="true">% 自己制造新符号</span>
+<span class="token comment" spellcheck="true">% 方法一， \not </span>
+<span class="token equation string">$$</span> x <span class="token function selector">\not</span> &lt; y<span class="token equation string">$$</span>
+<span class="token equation string">$$</span> x <span class="token function selector">\not</span> =y<span class="token equation string">$$</span>
+
+<span class="token comment" spellcheck="true">% 方法二， \stackrel{上面}{下面}</span>
+<span class="token equation string">$$</span> f(x) <span class="token function selector">\stackrel</span><span class="token punctuation">{</span>def<span class="token punctuation">}</span><span class="token punctuation">{</span>=<span class="token punctuation">}</span>x+1<span class="token equation string">$$</span>
+
+<span class="token equation string">$$</span> f(x) <span class="token function selector">\stackrel</span><span class="token punctuation">{</span>defination<span class="token punctuation">}</span><span class="token punctuation">{</span>=<span class="token punctuation">}</span>x+1<span class="token equation string">$$</span>
+
+<span class="token equation string">$$</span> <span class="token function selector">\sum</span>_<span class="token punctuation">{</span><span class="token function selector">\stackrel</span><span class="token punctuation">{</span>i, j=0<span class="token punctuation">}</span><span class="token punctuation">{</span>i<span class="token function selector">\not</span> = j<span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">{</span>n<span class="token punctuation">}</span><span class="token equation string">$$</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="复杂公式-示例"><a href="#复杂公式-示例" class="headerlink" title="复杂公式 示例"></a>复杂公式 示例</h3><pre class="line-numbers language-latex"><code class="language-latex">書寫技巧：
+不用刻意寫在一行中，
+可以適時地換行，
+但是不要留空白行。
+
+<span class="token equation string">\[ 
+s_{k,i}(x)
+<span class="token equation-command regex">\stackrel</span>{<span class="token equation-command regex">\triangle</span>}{=}
+<span class="token equation-command regex">\frac</span> 1{<span class="token equation-command regex">\displaystyle</span><span class="token equation-command regex">\sum</span>_{<span class="token equation-command regex">\stackrel</span>{j=0}{j<span class="token equation-command regex">\not</span>=1}}
+   (x_{k+i}-x_{k+j})} 
+\]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="一行公式分成多行"><a href="#一行公式分成多行" class="headerlink" title="一行公式分成多行"></a>一行公式分成多行</h3><p><code>\nonumber</code> 去掉编号</p>
+<pre class="line-numbers language-latex"><code class="language-latex"><span class="token comment" spellcheck="true">% 一个公式分多行写</span>
+<span class="token function selector">\begin</span><span class="token punctuation">{</span><span class="token keyword">eqnarray</span><span class="token punctuation">}</span><span class="token equation string">
+|f(z)| &amp;   =  &amp; {|e^{z^2-4}-1|}^{<span class="token equation-command regex">\frac</span> 13} <span class="token equation-command regex">\\</span>
+          &amp;<span class="token equation-command regex">\leq</span>&amp; {(|e^{z^2-4}|+1)}^{<span class="token equation-command regex">\frac</span> 13} <span class="token equation-command regex">\\</span>
+          &amp;   =  &amp; {(e^{x^2-y^2-4}+1)}^{<span class="token equation-command regex">\frac</span> 13}
+</span><span class="token function selector">\end</span><span class="token punctuation">{</span><span class="token keyword">eqnarray</span><span class="token punctuation">}</span>
+
+
+<span class="token comment" spellcheck="true">% 去掉前两个部分的编号</span>
+<span class="token function selector">\begin</span><span class="token punctuation">{</span><span class="token keyword">eqnarray</span><span class="token punctuation">}</span><span class="token equation string">
+|f(z)| &amp;   =  &amp; {|e^{z^2-4}-1|}^{<span class="token equation-command regex">\frac</span> 13}<span class="token equation-command regex">\nonumber</span> <span class="token equation-command regex">\\</span>
+          &amp;<span class="token equation-command regex">\leq</span>&amp; {(|e^{z^2-4}|+1)}^{<span class="token equation-command regex">\frac</span> 13} <span class="token equation-command regex">\nonumber</span><span class="token equation-command regex">\\</span>
+          &amp;   =  &amp; {(e^{x^2-y^2-4}+1)}^{<span class="token equation-command regex">\frac</span> 13}
+</span><span class="token function selector">\end</span><span class="token punctuation">{</span><span class="token keyword">eqnarray</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="使用array写数组"><a href="#使用array写数组" class="headerlink" title="使用array写数组"></a>使用array写数组</h3><p>两种位置方式, 表示現在行的基線對齊的位置</p>
+<ul>
+<li>[t]，</li>
+<li>[b]</li>
+<li>預設</li>
+</ul>
+<p>四种对齐方式  （与tabular 一致）</p>
+<ul>
+<li>l（left）</li>
+<li>c（center）</li>
+<li>r（right）</li>
+<li>|行與行間的直線</li>
+</ul>
+<pre class="line-numbers language-latex"><code class="language-latex">
+<span class="token comment" spellcheck="true">% 使用方式</span>
+<span class="token comment" spellcheck="true">%% 表格</span>
+<span class="token function selector">\begin</span><span class="token punctuation">{</span><span class="token keyword">tabular</span><span class="token punctuation">}</span> <span class="token punctuation">[</span>位置<span class="token punctuation">]</span> <span class="token punctuation">{</span>行對齊<span class="token punctuation">}</span>
+    ...
+<span class="token function selector">\end</span><span class="token punctuation">{</span><span class="token keyword">tabular</span><span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">%% array</span>
+<span class="token function selector">\begin</span><span class="token punctuation">{</span><span class="token keyword">array</span><span class="token punctuation">}</span> <span class="token punctuation">[</span>位置<span class="token punctuation">]</span> <span class="token punctuation">{</span>行對齊<span class="token punctuation">}</span>
+    ...
+<span class="token function selector">\end</span><span class="token punctuation">{</span><span class="token keyword">array</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-latex"><code class="language-latex">
+<span class="token comment" spellcheck="true">% 使用array实现多行公式</span>
+<span class="token comment" spellcheck="true">%實例說明：</span>
+This is an example for array.
+<span class="token function selector">\begin</span><span class="token punctuation">{</span><span class="token keyword">array</span><span class="token punctuation">}</span><span class="token punctuation">[</span>b<span class="token punctuation">]</span><span class="token punctuation">{</span>lcr<span class="token punctuation">}</span>  <span class="token comment" spellcheck="true">% lcr 表示有三列，第一列居左对齐，第二列居中，第三列居右</span>
+0.1          <span class="token punctuation">&amp;</span> a                    <span class="token punctuation">&amp;</span> 1<span class="token function selector">\\</span>
+0.01        <span class="token punctuation">&amp;</span> a+b               <span class="token punctuation">&amp;</span> 10<span class="token function selector">\\</span>
+0.001      <span class="token punctuation">&amp;</span> a+b+c          <span class="token punctuation">&amp;</span> 100<span class="token function selector">\\</span>
+0.0001   <span class="token punctuation">&amp;</span> a+b+c+d      <span class="token punctuation">&amp;</span>1000<span class="token function selector">\\</span>
+0.00001 <span class="token punctuation">&amp;</span> a+b+c+d+e <span class="token punctuation">&amp;</span>10000
+<span class="token function selector">\end</span><span class="token punctuation">{</span><span class="token keyword">array</span><span class="token punctuation">}</span>
+
+<span class="token function selector">\begin</span><span class="token punctuation">{</span><span class="token keyword">array</span><span class="token punctuation">}</span><span class="token punctuation">[</span>b<span class="token punctuation">]</span><span class="token punctuation">{</span>rcl<span class="token punctuation">}</span>
+0.1          <span class="token punctuation">&amp;</span> a                    <span class="token punctuation">&amp;</span> 1<span class="token function selector">\\</span>
+0.01        <span class="token punctuation">&amp;</span> a+b               <span class="token punctuation">&amp;</span> 10<span class="token function selector">\\</span>
+0.001      <span class="token punctuation">&amp;</span> a+b+c          <span class="token punctuation">&amp;</span> 100<span class="token function selector">\\</span>
+0.0001   <span class="token punctuation">&amp;</span> a+b+c+d      <span class="token punctuation">&amp;</span>1000<span class="token function selector">\\</span>
+0.00001 <span class="token punctuation">&amp;</span> a+b+c+d+e <span class="token punctuation">&amp;</span>10000
+<span class="token function selector">\end</span><span class="token punctuation">{</span><span class="token keyword">array</span><span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">% 一个矩阵例子</span>
+<span class="token equation string">\[
+    A= <span class="token equation-command regex">\left</span>(
+    <span class="token equation-command regex">\begin</span>{array}{ccc}
+    a_{11}  &amp; a_{12}&amp; a_{13}<span class="token equation-command regex">\\</span>
+    a_{21} &amp; a_{22}&amp; a_{23}<span class="token equation-command regex">\\</span>
+    a_{31} &amp; a_{32}&amp; a_{33}
+    <span class="token equation-command regex">\end</span>{array}
+    <span class="token equation-command regex">\right</span>) 
+\]</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="array进阶-在矩阵中添加横线、竖线"><a href="#array进阶-在矩阵中添加横线、竖线" class="headerlink" title="array进阶 在矩阵中添加横线、竖线"></a>array进阶 在矩阵中添加横线、竖线</h3><ul>
+<li>横线： 可以在对齐方式中添加，如 {c|cc}</li>
+<li>竖线： 可以使用 \hline 在有需要的地方添加</li>
+</ul>
+<pre class="line-numbers language-latex"><code class="language-latex">
+<span class="token equation string">\[
+    A= <span class="token equation-command regex">\left</span>(
+    <span class="token equation-command regex">\begin</span>{array}{c|cc}
+    a_{11}  &amp; a_{12}&amp; a_{13}<span class="token equation-command regex">\\</span>
+    <span class="token equation-command regex">\hline</span>
+    a_{21} &amp; a_{22}&amp; a_{23}<span class="token equation-command regex">\\</span>
+    a_{31} &amp; a_{32}&amp; a_{33}
+    <span class="token equation-command regex">\end</span>{array}
+    <span class="token equation-command regex">\right</span>) 
+\]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>另一个复杂数学式，重复使用array</p>
+<pre><code>\[  \left(
+\begin{array}{cc}
+    \left(  \begin{array}{cc} 
+    a_{11}&amp;a_{12}\\
+    a_{21}&amp;a_{22}
+    \end{array}  \right)
+&amp; B\\
+B^T &amp; 
+    \left(  \begin{array}{cc} 
+    c_{11}&amp;c_{12}\\
+    c_{21}&amp;c_{22}
+    \end{array}  \right)
+\end{array}
+\right)  \]
+</code></pre><h2 id="列表（有序、无序）"><a href="#列表（有序、无序）" class="headerlink" title="列表（有序、无序）"></a>列表（有序、无序）</h2><p>参考教程：<a href="https://blog.xulihang.me/use-list-in-latex/" target="_blank" rel="noopener">https://blog.xulihang.me/use-list-in-latex/</a></p>
+<h3 id="有序列表-begin-enumerate-1"><a href="#有序列表-begin-enumerate-1" class="headerlink" title="有序列表\begin{enumerate}[(1)]"></a>有序列表\begin{enumerate}[(1)]</h3><p>\item [] 可以加中括号，中括号的内容会被加粗<br>默认标识符（最多四层）：</p>
+<ul>
+<li>1.</li>
+<li>(a)</li>
+<li>i  </li>
+<li>A.</li>
+</ul>
+<pre><code>\begin{enumerate}
+    \item This is the first item
+    \item This is the second item
+    \item This is the third item
+    \item second
+\end{enumerate}</code></pre><h3 id="修改有序列表序号格式"><a href="#修改有序列表序号格式" class="headerlink" title="修改有序列表序号格式"></a>修改有序列表序号格式</h3><p>在\begin{enumerate}後面加入：<br>    \renewcommand{\label         }{          }<br>在 第一个空格 裡面是放想要更改的位置：</p>
+<p> （第一層：enumi，第二層enumii，<br>   第三層enumiii，第四層enumiv）<br>在 第二个空格 裡面則是放想要改的樣子：<br>  \Romon{ }是羅馬字體大寫，<br>  \romon{ }是小寫<br>  \arabic{ }是阿拉伯數字<br>  \Alph{ }是英文字母大寫，<br>  \alph{ }是小寫</p>
+<pre><code>% 示例
+想將第一層改為羅馬字體
+    大寫加()，如：(I),(II)
+想將第三層改為 
+    a.1, a.2, … 
+
+ANS：
+
+在第一層的\begin{enumerate}後加入
+\renewcommand{\labelenumi}{(\Roman{enumi})}
+
+在第三層的\begin{enumerate}後加入
+\renewcommand{\labelenumiii} {\theenumii.\arabic{enumiii}}
+</code></pre><h3 id="无序列表-begin-itemize"><a href="#无序列表-begin-itemize" class="headerlink" title="无序列表 \begin{itemize}"></a>无序列表 \begin{itemize}</h3><p>无需列表默认标识符：</p>
+<ul>
+<li>● </li>
+<li>—</li>
+<li>＊ </li>
+<li>‧<pre class="line-numbers language-latex"><code class="language-latex"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+</ul>
+<p>\begin{itemize}  % 无序列表，\item 表示新字段<br>\item [item1] first row<br>    \begin{itemize}  % 嵌套<br>    \item [sub item 1] 1.1 second row<br>    \item [sub item 2] 1.2 second row<br>    \end{itemize}<br>\item [item2] Whitespace at the start<br>of a line is generally ignored, and a<br>single line break is treated as ‘‘whitespace.’’.<br>\end{itemize}</p>
+<pre><code>
+### 还可以使用description实现无序列表
+```latex
+\begin{description}
+   \item [項目名 1] 項目1
+   \item [項目名 2] 項目2
+          . 
+          .
+          . 
+   \item [項目名 n] 項目n
+  \end{description}
+
+[項目名]中的字體會以 \bf（粗體）印出，如果要更改字體可以加入變更字體的指令。</code></pre><h3 id="多级列表"><a href="#多级列表" class="headerlink" title="多级列表"></a>多级列表</h3><pre class="line-numbers language-latex"><code class="language-latex">
+<span class="token comment" spellcheck="true">% 多级列表</span>
+<span class="token function selector">\begin</span><span class="token punctuation">{</span><span class="token keyword">enumerate</span><span class="token punctuation">}</span>
+<span class="token function selector">\item</span> a
+<span class="token function selector">\item</span> b
+  <span class="token function selector">\begin</span><span class="token punctuation">{</span><span class="token keyword">enumerate</span><span class="token punctuation">}</span>  <span class="token comment" spellcheck="true">% 列表里面嵌套列表</span>
+    <span class="token function selector">\item</span> b.1
+    <span class="token function selector">\item</span> b.2
+  <span class="token function selector">\end</span><span class="token punctuation">{</span><span class="token keyword">enumerate</span><span class="token punctuation">}</span>
+<span class="token function selector">\item</span> c
+<span class="token function selector">\end</span><span class="token punctuation">{</span><span class="token keyword">enumerate</span><span class="token punctuation">}</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="引用他人文章段落"><a href="#引用他人文章段落" class="headerlink" title="引用他人文章段落"></a>引用他人文章段落</h2><p>引用他人文章, 前后有空行、左右有空白（每行字数变短）</p>
+<h3 id="有三種引用文環境："><a href="#有三種引用文環境：" class="headerlink" title="有三種引用文環境："></a>有三種引用文環境：</h3><pre><code>（1）quotation  
+（2）quote  
+（3）verse  </code></pre><h3 id="三种方式的区别："><a href="#三种方式的区别：" class="headerlink" title="三种方式的区别："></a>三种方式的区别：</h3><ul>
+<li><p>quotation時，只是每行長度縮短，其他與平常的段落一樣，取文頭空白，遇空白行視為新段落。</p>
+</li>
+<li><p>quote時，不會空出文頭空白，遇空白行新段落會空出小的垂直空白。</p>
+</li>
+<li><p>verse時，與quote類似，只是引文區前的空白會更大</p>
+</li>
+</ul>
+<h3 id="使用方式"><a href="#使用方式" class="headerlink" title="使用方式"></a>使用方式</h3><pre><code>\begin{quote}
+  待引用的文章
+\end{quote}</code></pre><h2 id="verbatim原文照妖镜模式"><a href="#verbatim原文照妖镜模式" class="headerlink" title="verbatim原文照妖镜模式"></a>verbatim原文照妖镜模式</h2><p>verbatim環境是把環境中的內文原原本本絲毫不改變的印出。</p>
+<h3 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h3><pre><code>\begin{verbatim}
+     ……
+\end{verbatim}</code></pre><p>包含空白與特殊符號亦不例外。不過只能使用\tt字體（typewrite）。</p>
+<h2 id="单行照妖镜模式"><a href="#单行照妖镜模式" class="headerlink" title="单行照妖镜模式"></a>单行照妖镜模式</h2><p>% 单行照妖镜模式 <code>\verb+ ... +</code><br>% 两个加号中间的都照原样输出，常用于输入特殊符合</p>
+<pre><code>A Latin Capital Letter
+  \verb+\\\B  Latin  Capital  Letter///+</code></pre><h2 id="定理环境"><a href="#定理环境" class="headerlink" title="定理环境"></a>定理环境</h2><p><code>\newtheorem{name}{caption}[within]</code></p>
+<p>舉例來說明：<br><code>\newtheorem{thm}{Theorem}[section]</code><br>代表環境定義為：此後LaTEX在section 2看到第一個\begin{thm}…\end{thm}就知道要將此段設為Theorem 2.1，定理內容以斜體印出。</p>
+<pre><code>步驟一：將
+
+   \newtheorem{thm}{Theorem}[section]放在前言區
+
+步驟二：使用定理時，輸入環境指令及定理內文
+   \begin{thm}
+   Suppose graph G=FH(n). If n is odd, ……
+   \end{thm}
+
+則印出時，定理環境部分會斜體，</code></pre><pre class="line-numbers language-latex"><code class="language-latex">也可以定义多种格式、指定编号范围
+
+如下面1行，先定义了同一个编号域 thm
+接下来3行，都是在同一个thm域里面，编号累加
+<span class="token function selector">\newtheorem</span><span class="token punctuation">{</span>thm<span class="token punctuation">}</span><span class="token punctuation">{</span>Theorem<span class="token punctuation">}</span>
+<span class="token function selector">\newtheorem</span><span class="token punctuation">{</span>lemma<span class="token punctuation">}</span><span class="token punctuation">[</span>thm<span class="token punctuation">]</span><span class="token punctuation">{</span>Lemma<span class="token punctuation">}</span>
+<span class="token function selector">\newtheorem</span><span class="token punctuation">{</span>fact<span class="token punctuation">}</span><span class="token punctuation">[</span>thm<span class="token punctuation">]</span><span class="token punctuation">{</span>Fact<span class="token punctuation">}</span>
+<span class="token function selector">\newtheorem</span><span class="token punctuation">{</span>cor<span class="token punctuation">}</span><span class="token punctuation">[</span>thm<span class="token punctuation">]</span><span class="token punctuation">{</span>Corollary<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">% 使用自定义的thm环境</span>
+<span class="token function selector">\begin</span><span class="token punctuation">{</span><span class="token keyword">thm</span><span class="token punctuation">}</span>
+    This is the overall environment of theorem. It contains lemma, fact, corollary.
+    <span class="token function selector">\begin</span><span class="token punctuation">{</span><span class="token keyword">lemma</span><span class="token punctuation">}</span>
+    lemma environment 1
+    <span class="token function selector">\end</span><span class="token punctuation">{</span><span class="token keyword">lemma</span><span class="token punctuation">}</span>
+
+    <span class="token function selector">\begin</span><span class="token punctuation">{</span><span class="token keyword">lemma</span><span class="token punctuation">}</span>
+    lemma environment 2
+    <span class="token function selector">\end</span><span class="token punctuation">{</span><span class="token keyword">lemma</span><span class="token punctuation">}</span>
+
+    <span class="token function selector">\begin</span><span class="token punctuation">{</span><span class="token keyword">fact</span><span class="token punctuation">}</span>
+    fact environment 1
+    <span class="token function selector">\end</span><span class="token punctuation">{</span><span class="token keyword">fact</span><span class="token punctuation">}</span>
+
+    <span class="token function selector">\begin</span><span class="token punctuation">{</span><span class="token keyword">fact</span><span class="token punctuation">}</span>
+    fact environment 2
+    <span class="token function selector">\end</span><span class="token punctuation">{</span><span class="token keyword">fact</span><span class="token punctuation">}</span>
+
+    <span class="token function selector">\begin</span><span class="token punctuation">{</span><span class="token keyword">cor</span><span class="token punctuation">}</span>
+    corollary environment 1 <span class="token comment" spellcheck="true">% 推论</span>
+    <span class="token function selector">\end</span><span class="token punctuation">{</span><span class="token keyword">cor</span><span class="token punctuation">}</span>
+<span class="token function selector">\end</span><span class="token punctuation">{</span><span class="token keyword">thm</span><span class="token punctuation">}</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-latex"><code class="language-latex">
+定理环境的特点是，自动编号、标题大写，不止可以用于定理
+
+<span class="token function selector">\newtheorem</span><span class="token punctuation">{</span>eg<span class="token punctuation">}</span><span class="token punctuation">{</span>Example<span class="token punctuation">}</span>
+<span class="token function selector">\newtheorem</span><span class="token punctuation">{</span>ex<span class="token punctuation">}</span><span class="token punctuation">{</span>Exercise<span class="token punctuation">}</span>
+<span class="token function selector">\newtheorem</span><span class="token punctuation">{</span>defi<span class="token punctuation">}</span><span class="token punctuation">{</span>Definition<span class="token punctuation">}</span>
+<span class="token function selector">\newtheorem</span><span class="token punctuation">{</span>hw<span class="token punctuation">}</span><span class="token punctuation">{</span>Problem<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="表格环境-tabular"><a href="#表格环境-tabular" class="headerlink" title="表格环境: tabular"></a>表格环境: tabular</h2><pre class="line-numbers language-latex"><code class="language-latex">
+<span class="token function selector">\begin</span><span class="token punctuation">{</span><span class="token keyword">tabular</span><span class="token punctuation">}</span><span class="token punctuation">[</span>竖向位置<span class="token punctuation">]</span><span class="token punctuation">{</span>列格式<span class="token punctuation">}</span>
+第一行 字段一 <span class="token punctuation">&amp;</span> 第一行 字段二 <span class="token punctuation">&amp;</span> 第一行 字段三 <span class="token function selector">\\</span>
+第二行 字段一 <span class="token punctuation">&amp;</span> 第二行 字段二 <span class="token punctuation">&amp;</span> 第二行 字段三 <span class="token function selector">\\</span>
+第三行
+<span class="token function selector">\end</span><span class="token punctuation">{</span><span class="token keyword">tabular</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>竖向位置，表格在竖直方向上与外部文本行的相对位置，可选t（top顶部对齐）、b（bottom底部对齐），缺省值为居中</li>
+<li>列格式<ul>
+<li>指定文本位置，l，c，r， 左中右</li>
+<li>指定边界线格式， |, || 等</li>
+</ul>
+</li>
+</ul>
+<p>表格中间用 &amp; 表示分割， \ 表示换行</p>
+<h3 id="表格横线"><a href="#表格横线" class="headerlink" title="表格横线"></a>表格横线</h3><p>\hline表示与表格同宽的横线；<br>\cline{m-n}表示从m列到第n列结束的水平线</p>
+<h3 id="表格竖线"><a href="#表格竖线" class="headerlink" title="表格竖线"></a>表格竖线</h3><p>\vline,表示在当前位置画一条与行同高的竖线</p>
+<h3 id="合并相邻多列"><a href="#合并相邻多列" class="headerlink" title="合并相邻多列"></a>合并相邻多列</h3><p>\multicolumn{列数}{列格式}{文本内容}</p>
+<h2 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h2><p>article里可以用\section<br>report里面用\chapter</p>
+<pre><code>% 附录
+\begin{appendix}
+    \section{Proof of Theorem 1}
+        balabala 1
+    \section{Proof of Theorem 2}
+        balabala 2
+
+\end{appendix}</code></pre><h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p>教程：<a href="https://www.cnblogs.com/yifdu25/p/8330652.html" target="_blank" rel="noopener">https://www.cnblogs.com/yifdu25/p/8330652.html</a></p>
+<h3 id="方法一-不使用BibTeX，-自己写"><a href="#方法一-不使用BibTeX，-自己写" class="headerlink" title="方法一 不使用BibTeX， 自己写"></a>方法一 不使用BibTeX， 自己写</h3><p>格式： <code>\bibitem[印出標記]{名字}參考資料一</code><br>其中：</p>
+<ul>
+<li>印出标记：印出來的方式如果不設定，則預設方式是[1],[2],[3]…</li>
+<li>名字：名字的使用方式是在文中加上\cite{名字}則會顯示[1]</li>
+</ul>
+<pre><code>% 参考文献
+\begin{thebibliography}{99}  % 99表示参考文献的最大数目为99条
+\bibitem[Lamport 86]{lam}Leslie Lamport. {\it A document Prepatation System}, Addison-Wesley Pulishing Co., 1986.
+
+\end{thebibliography}
+</code></pre><p>在正文中引用参考文献的方法是：</p>
+<pre><code>\cite{ref1}
+
+\cite{ref1, ref5}</code></pre><p>这样编译后就可以得到：<br>[1]<br>[1, 5]</p>
+<h3 id="方法二：使用BibTeX"><a href="#方法二：使用BibTeX" class="headerlink" title="方法二：使用BibTeX"></a>方法二：使用BibTeX</h3><p>这种方法需要建立参考文献数据库，引用的时候调用所需要的参考文献。</p>
+<p>BibTeX 是一种格式和一个程序，用于协调LaTeX的参考文献处理.<br>BibTeX 使用数据库的的方式来管理参考文献. BibTeX 文件的后缀名为 .bib . 先来看一个例子</p>
+<pre><code>@article{name1,
+author = {作者, 多个作者用 and 连接},
+title = {标题},
+journal = {期刊名},
+volume = {卷20},
+number = {页码},
+year = {年份},
+abstract = {摘要, 这个主要是引用的时候自己参考的, 这一行不是必须的}
+}
+@book{name2,
+author =&quot;作者&quot;,
+year=&quot;年份2008&quot;,
+title=&quot;书名&quot;,
+publisher =&quot;出版社名称&quot;
+}</code></pre><p>说明:</p>
+<p>第一行@article 告诉 BibTeX 这是一个文章类型的参考文献，还有其它格式, 例如 article, book, booklet, conference, inbook, incollection, inproceedings，manual, misc, mastersthesis, phdthesis, proceedings, techreport, unpublished 等等.</p>
+<p>接下来的”name1”，就是你在正文中应用这个条目的名称.<br>其它就是参考文献里面的具体内容啦.</p>
+<h4 id="在LaTeX中使用BibTeX"><a href="#在LaTeX中使用BibTeX" class="headerlink" title="在LaTeX中使用BibTeX"></a>在LaTeX中使用BibTeX</h4><p>为了在LaTeX中使用BibTeX 数据库, 你必须先做下面三件事情:</p>
+<p>1) 标记引用 (Make citations). 当你在文档中想使用引用时, 插入 LaTeX 命令</p>
+<p>\cite{引用文章名称}</p>
+<p>“引用文章名称” 就是前边定义@article后面的名称.</p>
+<p>2) 告诉LaTeX生成参考文献列表，在 LaTeX 的结束前输入</p>
+<p>\bibliography{bibfile}</p>
+<p>这里bibfile 就是你的 BibTeX 数据库文件 bibfile.bib .</p>
+<h4 id="运行-BibTeX"><a href="#运行-BibTeX" class="headerlink" title="运行 BibTeX"></a>运行 BibTeX</h4><p>分为下面四步</p>
+<ol>
+<li>用LaTeX编译你的 .tex 文件 , 这是生成一个 .aux 的文件, 这告诉 BibTeX 将使用那些应用；</li>
+<li>用BibTeX 编译 .bib 文件；</li>
+<li>再次用LaTeX 编译你的 .tex 文件，这个时候在文档中已经包含了参考文献，但此时引用的编号可能不正确；</li>
+<li>最后用 LaTeX 编译你的 .tex 文件，如果一切顺利的话, 这是所有东西都已正常了.<pre class="line-numbers language-latex"><code class="language-latex"><span class="token comment" spellcheck="true">%例子：将上面的 BibTeX 的的例子保存为 bibtex-example.bib .</span>
+<span class="token function selector">\documentclass</span><span class="token punctuation">{</span><span class="token keyword">article</span><span class="token punctuation">}</span>
+<span class="token function selector">\usepackage</span><span class="token punctuation">{</span><span class="token keyword">CJK</span><span class="token punctuation">}</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+</li>
+</ol>
+<p>\begin{document}<br>\begin{CJK}{UTF8}{gkai}<br>%我是在linux下用使用latex的, window用户将上一行改为\begin{CJK}{GBK}{kai}<br>text\cite{name1}\cite{name2}<br>中文<br>把Latex中的 Reference 写成中文的”参考文献” %如果文档类是article之类的, 用\renewcommand\refname{参考文献}<br>%如果文档类是book之类的, 用\renewcommand\bibname{参考文献}<br>\renewcommand\refname{参考文献}<br>\bibliographystyle{plain}<br>\bibliography{ bibtex-example.bib}<br>\end{CJK}<br>\end{document}</p>
+<pre><code>
+## 参考教程：
+链接: https://pan.baidu.com/s/1XG60jJ6ohZvKbUMZLZQI6Q 提取码: c1cq
+
+
+</code></pre>
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://weidafeng.github.io" rel="external nofollow noreferrer">Tristan</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://weidafeng.github.io/2020/03/17/latex-chang-yong-ji-qiao/">https://weidafeng.github.io/2020/03/17/latex-chang-yong-ji-qiao/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="https://weidafeng.github.io" target="_blank">Tristan</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/LaTeX/">
+                                    <span class="chip bg-color">LaTeX</span>
+                                </a>
+                            
+                                <a href="/tags/TOOLS/">
+                                    <span class="chip bg-color">TOOLS</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+
+<div id="article-share">
+    
+    
+    <div class="social-share" data-sites="wechat,weibo,twitter,facebook,google,qq,qzone,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的每一笔赞赏我都当成喜欢</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+            
+        </div>
+    </div>
+
+    
+        <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
+<link rel="stylesheet" href="/css/my-gitalk.css">
+
+<div class="card gitalk-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="gitalk-container" class="card-content"></div>
+</div>
+
+<script src="/libs/gitalk/gitalk.min.js"></script>
+<script>
+    let gitalk = new Gitalk({
+        clientID: 'f2cd381d3cccb13bb115',
+        clientSecret: '1f5eddb93791fe90d489afd605bfa676b46fe77e',
+        repo: 'weidafeng.github.io',
+        owner: 'weidafeng',
+        admin: null,
+        id: '2020-03-17T16-03-39',
+        distractionFreeMode: false  // Facebook-like distraction free mode
+    });
+
+    gitalk.render('gitalk-container');
+</script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2020/03/17/latex-chang-yong-ji-qiao/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="LaTeX常用技巧">
+                        
+                        <span class="card-title">LaTeX常用技巧</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            LaTeX入门, LaTeX常用技巧
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-17
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/LaTeX/" class="post-category">
+                                    LaTeX
+                                </a>
+                            
+                            <a href="/categories/LaTeX/TOOLS/" class="post-category">
+                                    TOOLS
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/LaTeX/">
+                        <span class="chip bg-color">LaTeX</span>
+                    </a>
+                    
+                    <a href="/tags/TOOLS/">
+                        <span class="chip bg-color">TOOLS</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/02/28/ben-di-fang-wen-yuan-cheng-fu-wu-qi-de-tensorboard/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="本地访问远程服务器的tensorboard">
+                        
+                        <span class="card-title">本地访问远程服务器的tensorboard</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            本地访问远程服务器的tensorboard
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-28
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%B7%A5%E5%85%B7%E6%8A%80%E5%B7%A7/" class="post-category">
+                                    工具技巧
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E5%B7%A5%E5%85%B7%E6%8A%80%E5%B7%A7/">
+                        <span class="chip bg-color">工具技巧</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: 特里斯丹<br />'
+            + '文章作者: Tristan<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，转载请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+    
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+<!-- 代码块折行 -->
+
+<style type="text/css">
+code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }
+</style>
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+    <footer class="page-footer bg-color">
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            <span id="year">2019</span>
+            <a href="https://weidafeng.github.io" target="_blank">Tristan</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">6.4k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/weidafeng/" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:weidafeng@sjtu.edu.cn" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <a href="https://www.zhihu.com/people/wwdafg" class="tooltipped" target="_blank" data-tooltip="关注我的知乎: https://www.zhihu.com/people/wwdafg" data-position="top" data-delay="50">
+        <i class="fab fa-zhihu1">知</i>
+    </a>
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script src="/js/search.js"></script>
+<script type="text/javascript">
+$(function () {
+    searchFunc("/" + "search.xml", 'searchInput', 'searchResult');
+});
+</script>
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config("");
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
+    
+
+</body>
+
+</html>
