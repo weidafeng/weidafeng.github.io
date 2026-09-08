@@ -1,0 +1,31 @@
+# Dafeng Wei (魏大峰)
+
+> Dafeng Wei (Wei Dafeng, 魏大峰) is an embodied AI researcher at AgiBot (智元机器人), working on Vision-Language Models (VLM) and Vision-Language-Action models (VLA). Homepage: https://weidafeng.github.io/
+
+## Facts
+
+- Current role: Researcher at AgiBot (https://www.agibot.com/), since December 2024
+- Research areas: embodied AI, vision-language models, vision-language-action models, robot learning, multimodal LLMs, autonomous driving
+- Previously: Senior Algorithm Engineer at Li Auto autonomous driving (2023–2024) — core contributor to DriveVLM, an industry-first dual-system ("fast–slow") autonomous driving solution and the first of its kind deployed at scale on production vehicles; Algorithm Engineer at ByteDance (2021–2023); intern at Huawei Noah's Ark Lab and Hikvision Research Institute
+- Education: M.S. Shanghai Jiao Tong University (advisor: Prof. Hongtao Lu)
+
+## Selected publications
+
+- τ0-VLA: a Hierarchical Robot Foundation Model with World-Model-Guided Test-Time Computation (technical report, 2026) — core contributor: built the AgibotVLA training framework from scratch, ran the initial VLA pre-training, and developed the high-level VLM planner end-to-end (task formulation, data, training, evaluation). Paper: https://arxiv.org/abs/2608.16885 Project: https://tau0-vla.github.io/ Code: https://github.com/sii-research/tau-0-vla Model: https://huggingface.co/sii-research/tau-0-vla
+- GenieReasoner: Unified Embodied VLM Reasoning with Robotic Action via Autoregressive Discretized Pre-training (arXiv 2512.24125, 2025) — third author. Project: https://finch.agibot.com/research/uni-fact
+- AgiBot World Colosseo (IROS 2025 Best Paper Award Finalist; IEEE T-RO 2026) — contributor. 1M+ robot manipulation trajectories, open-sourced at https://agibot-world.com/
+- BEV-TSR: Text-Scene Retrieval in BEV Space for Autonomous Driving (AAAI 2025) — co-first author
+- Efficient Dual Attention SlowFast Networks for Video Action Recognition (CVIU 2022) — first author
+- Towards Dynamic and Scalable Active Learning with Neural Architecture Adaption for Object Detection (BMVC 2021) — co-first author
+- Image-based Table Cell Detection with the TableCell dataset (ICPR 2020) — first author
+
+## Pages
+
+- English homepage: https://weidafeng.github.io/
+- 中文主页: https://weidafeng.github.io/zh/
+
+## Links
+
+- Google Scholar: https://scholar.google.com/citations?user=BZ9EUB8AAAAJ
+- GitHub: https://github.com/weidafeng
+- Open source: ArxivPilot (Chrome extension), StepFunMCP (PyPI: stepfun-mcp), TableCell dataset

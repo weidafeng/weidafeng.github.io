@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8e5aa0"/>
+      <stop offset="1" stop-color="#5a3468"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="200" fill="url(#g)"/>
+  <text x="150" y="112" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="30" font-weight="600" fill="#ffffff" text-anchor="middle" opacity="0.95">SlowFast</text>
+</svg>

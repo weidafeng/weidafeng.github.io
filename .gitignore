@@ -1,0 +1,9 @@
+# Wrangler (Cloudflare Pages) local cache
+.wrangler/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# 微信导出的原始图片(头像请用处理后的 images/avatar.jpg)
+images/微信图片_*.jpg

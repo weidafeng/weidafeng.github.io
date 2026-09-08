@@ -1,0 +1,82 @@
+# All crawlers welcome
+User-agent: *
+Allow: /
+
+# ---- OpenAI / ChatGPT (training, search, browsing) ----
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# ---- Anthropic / Claude ----
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# ---- Google / Gemini ----
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+# ---- ByteDance / Doubao (豆包) ----
+User-agent: Bytespider
+Allow: /
+
+# ---- Baidu (文心一言; DeepSeek 等常经百度检索管道) ----
+User-agent: Baiduspider
+Allow: /
+
+# ---- Tencent / Yuanbao (元宝, 经搜狗) ----
+User-agent: Sogou web spider
+Allow: /
+
+# ---- Alibaba / Qwen (通义/夸克, 经神马搜索) ----
+User-agent: YisouSpider
+Allow: /
+
+# ---- 360 / 纳米AI ----
+User-agent: 360Spider
+Allow: /
+
+# ---- Perplexity ----
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# ---- Common Crawl (开源模型训练语料: DeepSeek/Qwen/Llama 等的重要来源) ----
+User-agent: CCBot
+Allow: /
+
+# ---- Others ----
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: PetalBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+Sitemap: https://weidafeng.github.io/sitemap.xml
